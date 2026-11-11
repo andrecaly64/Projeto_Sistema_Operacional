@@ -41,7 +41,7 @@ set_global_assignment -name DEVICE EP4CE115F29C7
 set_global_assignment -name TOP_LEVEL_ENTITY Processador
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:47:50  MAY 24, 2023"
-set_global_assignment -name LAST_QUARTUS_VERSION "20.1.0 Standard Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "20.1.0 Lite Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
@@ -54,22 +54,22 @@ set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_location_assignment PIN_Y2 -to clk0
-set_location_assignment PIN_AC25 -to imm8_2[0]
-set_location_assignment PIN_AB25 -to imm8_2[1]
-set_location_assignment PIN_AC24 -to imm8_2[2]
-set_location_assignment PIN_AB24 -to imm8_2[3]
-set_location_assignment PIN_AB23 -to imm8_2[4]
-set_location_assignment PIN_AA24 -to imm8_2[5]
-set_location_assignment PIN_AA23 -to imm8_2[6]
-set_location_assignment PIN_AA22 -to imm8_2[7]
-set_location_assignment PIN_AB28 -to imm8[0]
-set_location_assignment PIN_AC28 -to imm8[1]
-set_location_assignment PIN_AC27 -to imm8[2]
-set_location_assignment PIN_AD27 -to imm8[3]
-set_location_assignment PIN_AB27 -to imm8[4]
-set_location_assignment PIN_AC26 -to imm8[5]
-set_location_assignment PIN_AD26 -to imm8[6]
-set_location_assignment PIN_AB26 -to imm8[7]
+set_location_assignment PIN_AF15 -to imm8_2[0]
+set_location_assignment PIN_AF24 -to imm8_2[1]
+set_location_assignment PIN_AE21 -to imm8_2[2]
+set_location_assignment PIN_AF25 -to imm8_2[3]
+set_location_assignment PIN_AC22 -to imm8_2[4]
+set_location_assignment PIN_AE22 -to imm8_2[5]
+set_location_assignment PIN_AF21 -to imm8_2[6]
+set_location_assignment PIN_AF22 -to imm8_2[7]
+set_location_assignment PIN_Y16 -to imm8[0]
+set_location_assignment PIN_AD21 -to imm8[1]
+set_location_assignment PIN_AE16 -to imm8[2]
+set_location_assignment PIN_AD15 -to imm8[3]
+set_location_assignment PIN_AE15 -to imm8[4]
+set_location_assignment PIN_AC19 -to imm8[5]
+set_location_assignment PIN_AF16 -to imm8[6]
+set_location_assignment PIN_AD19 -to imm8[7]
 set_location_assignment PIN_V21 -to seg3[0]
 set_location_assignment PIN_U21 -to seg3[1]
 set_location_assignment PIN_AB20 -to seg3[2]
@@ -98,7 +98,7 @@ set_location_assignment PIN_L26 -to seg0[3]
 set_location_assignment PIN_L25 -to seg0[4]
 set_location_assignment PIN_J22 -to seg0[5]
 set_location_assignment PIN_H22 -to seg0[6]
-set_location_assignment PIN_Y23 -to reset
+set_location_assignment PIN_AG25 -to reset
 set_global_assignment -name ENABLE_OCT_DONE OFF
 set_global_assignment -name ENABLE_CONFIGURATION_PINS OFF
 set_global_assignment -name ENABLE_BOOT_SEL_PIN OFF
@@ -110,7 +110,7 @@ set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
 set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
 set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
 set_location_assignment PIN_E21 -to clk
-set_location_assignment PIN_M23 -to botao_bruto
+set_location_assignment PIN_AB22 -to botao_bruto
 set_global_assignment -name TEXT_FILE single_port_rom_init.txt
 set_global_assignment -name VERILOG_FILE unidade_de_controle.v
 set_global_assignment -name VERILOG_FILE banco_de_registradores.v
@@ -145,7 +145,7 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform98.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform99.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform100.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform101.vwf
-set_location_assignment PIN_Y24 -to key
+set_location_assignment PIN_AD22 -to key
 set_location_assignment PIN_AB19 -to seg4[0]
 set_location_assignment PIN_AA19 -to seg4[1]
 set_location_assignment PIN_AG21 -to seg4[2]
@@ -175,4 +175,24 @@ set_location_assignment PIN_AF17 -to seg7[4]
 set_location_assignment PIN_AG18 -to seg7[5]
 set_location_assignment PIN_AA14 -to seg7[6]
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform102.vwf
+set_global_assignment -name VERILOG_FILE hd_emulado.v
+set_global_assignment -name VERILOG_FILE dma_controller.v
+set_global_assignment -name VERILOG_FILE memoria_ram_instrucoes.v
+set_global_assignment -name HEX_FILE hd_conteudo.hex
+set_global_assignment -name VERILOG_FILE timer.v
+set_global_assignment -name VERILOG_FILE lcd_controller.v
+set_location_assignment PIN_L6 -to lcd_blon
+set_location_assignment PIN_M5 -to lcd_data[7]
+set_location_assignment PIN_M3 -to lcd_data[6]
+set_location_assignment PIN_K2 -to lcd_data[5]
+set_location_assignment PIN_K1 -to lcd_data[4]
+set_location_assignment PIN_K7 -to lcd_data[3]
+set_location_assignment PIN_L2 -to lcd_data[2]
+set_location_assignment PIN_L1 -to lcd_data[1]
+set_location_assignment PIN_L3 -to lcd_data[0]
+set_location_assignment PIN_L4 -to lcd_en
+set_location_assignment PIN_L5 -to lcd_on
+set_location_assignment PIN_M2 -to lcd_rs
+set_location_assignment PIN_M1 -to lcd_rw
+set_global_assignment -name VERILOG_FILE bios_rom.v
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

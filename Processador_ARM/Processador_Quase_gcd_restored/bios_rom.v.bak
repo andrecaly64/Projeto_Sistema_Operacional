@@ -1,0 +1,76 @@
+module bios_rom(clk, addr, q);
+
+input wire clk;
+input wire [4:0] addr;
+output reg [31:0] q;
+
+reg [31:0] rom [0:31];
+
+initial begin
+	rom[0] = 32'hE0FC00AA;
+	rom[1] = 32'hE0FC0464;
+	rom[2]  = 32'hE1008000;
+   rom[3]  = 32'hE1048800;
+        // 4: SUB r3, r0, r2 (compara se r0 == r2)
+        rom[4]  = 32'hE00A0C00;
+        // 5: BNE 18 (se falhar o POST, salta para loop de erro no endereço 18)
+        rom[5]  = 32'hE8000012;
+        // 6: MOV r0, #1 (Sinaliza POST OK)
+        rom[6]  = 32'hE0FC0001;
+        // 7: OUT r0 (acende indicativo nos 7 segmentos)
+        rom[7]  = 32'hEC040000;
+        
+        // --- Carga do Kernel via DMA ---
+        // 8: MOV r0, #1 (Setor 1 do HD emulado)
+        rom[8]  = 32'hE0FC0001;
+        // 9: MOV r1, #1000 (Endereço MMIO DMA_SECTOR)
+        rom[9]  = 32'hE0FC07E8;
+        // 10: STR r0, [r1, #0]
+        rom[10] = 32'hE1008000;
+        // 11: MOV r0, #0 (Endereço base destino na RAM de instruções)
+        rom[11] = 32'hE0FC0000;
+        // 12: MOV r1, #1001 (Endereço MMIO DMA_DEST)
+        rom[12] = 32'hE0FC07E9;
+        // 13: STR r0, [r1, #0]
+        rom[13] = 32'hE1008000;
+        // 14: MOV r0, #1 (Comando Start DMA)
+        rom[14] = 32'hE0FC0001;
+        // 15: MOV r1, #1002 (Endereço MMIO DMA_START)
+        rom[15] = 32'hE0FC07EA;
+        // 16: STR r0, [r1, #0]
+        rom[16] = 32'hE1008000;
+
+        // --- Polling: Aguarda DMA terminar a transferência ---
+        // 17: MOV r1, #1003 (Endereço MMIO DMA_BUSY)
+        rom[17] = 32'hE0FC07EB;
+        // 18: LDR r0, [r1, #0]
+        rom[18] = 32'hE1048000;
+        // 19: SUB r2, r0, #0 (avalia flag busy)
+        rom[19] = 32'hE00A0800;
+        // 20: BNE 18 (enquanto busy != 0, aguarda)
+        rom[20] = 32'hE8000012;
+
+        // --- Finalização do Boot ---
+        // 21: MOV r0, #1 (Valor para desativar modo boot)
+        rom[21] = 32'hE0FC0001;
+        // 22: MOV r1, #1010 (Endereço MMIO BOOT_DONE)
+        rom[22] = 32'hE0FC07F2;
+        // 23: STR r0, [r1, #0] (Desativa modo_boot no hardware)
+        rom[23] = 32'hE1008000;
+        // 24: B 0 (Salta para o endereço 0 da RAM de instruções, onde está o Kernel)
+        rom[24] = 32'hEA000000;
+
+        // --- Tratador de Falha de POST (se a memória falhar) ---
+        // 25: MOV r0, #255 (Código de erro visual)
+        rom[25] = 32'hE0FC00FF;
+        // 26: OUT r0
+        rom[26] = 32'hEC040000;
+        // 27: B 27 (Trava em laço infinito indicando falha)
+        rom[27] = 32'hEA00001B;
+end
+	
+always @(posedge clk) begin
+	q <= rom[addr];
+end
+
+endmodule

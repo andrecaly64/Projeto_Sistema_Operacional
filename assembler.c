@@ -126,7 +126,9 @@ int main(int argc, char* argv[]) {
                 strcmp(primeira_palavra, "BCS") == 0 || strcmp(primeira_palavra, "CPY") == 0 ||
                 strcmp(primeira_palavra, "IN") == 0 || strcmp(primeira_palavra, "IN2") == 0 ||
                 strcmp(primeira_palavra, "OUT") == 0 || strcmp(primeira_palavra, "MOV") == 0 ||
-                strcmp(primeira_palavra, "NOP") == 0 || strcmp(primeira_palavra, "BTN") == 0) {
+                strcmp(primeira_palavra, "NOP") == 0 || strcmp(primeira_palavra, "BTN") == 0 || 
+                strcmp(primeira_palavra, "CLI") == 0 || strcmp(primeira_palavra, "STI") == 0 ||
+                strcmp(primeira_palavra, "RETI") == 0){
                 endereco_counter++;
             }
         }
@@ -158,7 +160,9 @@ int main(int argc, char* argv[]) {
                             strcmp(op, "BCS") == 0 || strcmp(op, "CPY") == 0 ||
                             strcmp(op, "IN") == 0 || strcmp(op, "OUT") == 0 ||
                             strcmp(op, "MOV") == 0 || strcmp(op, "IN2") == 0 ||
-                            strcmp(op, "NOP") == 0 || strcmp(op, "BTN") == 0);
+                            strcmp(op, "NOP") == 0 || strcmp(op, "BTN") == 0 ||
+                            strcmp(op, "CLI") == 0 || strcmp(op, "STI") == 0 ||
+                            strcmp(op, "RETI") == 0);
 
         if (!eh_instrucao) {
             continue;
@@ -276,6 +280,21 @@ int main(int argc, char* argv[]) {
         else if (strcmp(op, "BTN") == 0) {
             strncpy(&binario[4], "11", 2);
             strncpy(&binario[6], "000010", 6); 
+        }
+
+        else if (strcmp(op, "CLI") == 0) {
+            strncpy(&binario[4], "11", 2);
+            strncpy(&binario[6], "000100", 6);
+        }
+
+        else if (strcmp(op, "STI") == 0) {
+            strncpy(&binario[4], "11", 2);
+            strncpy(&binario[6], "000101", 6);
+        }
+
+        else if (strcmp(op, "RETI") == 0) {
+            strncpy(&binario[4], "11", 2);
+            strncpy(&binario[6], "000110", 6);
         }
 
         else if (op[0] == 'B') {

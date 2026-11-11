@@ -1,0 +1,4 @@
+module memoria_ram_intrucoes #(parameter DATA_WIDTH=32, parameter ADDR_WIDTH=10)
+
+input wire clk;
+input wire [(ADDR_WIDTH-1):0] addr;

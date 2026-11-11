@@ -1,0 +1,3 @@
+module lcd_controller (clk50M, reset, pc_instrucao, pid_processo, lcd_data, lcd_rs, lcd_rw, lcd_en, lcd_on, lcd_blon);
+
+input wire clk50M	;

@@ -16,7 +16,7 @@ if(~reset_n)
 begin
 count = 0;
 end
-if(count==500000)
+if(count==5000000)
 begin
 count=0;
 novo_clk=~novo_clk;

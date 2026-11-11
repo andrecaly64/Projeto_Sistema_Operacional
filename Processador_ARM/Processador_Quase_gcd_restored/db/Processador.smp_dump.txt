@@ -1,0 +1,21 @@
+
+State Machine - |Processador|lcd_controller:LCD1|state
+Name state.S_TG_LINE2 state.S_WR_LINE2 state.S_SET_LINE2 state.S_TG_LINE1 state.S_WR_LINE1 state.S_SET_LINE1 state.S_INIT_4 state.S_INIT_3 state.S_INIT_2 state.S_INIT_1 state.S_BOOT 
+state.S_BOOT 0 0 0 0 0 0 0 0 0 0 0 
+state.S_INIT_1 0 0 0 0 0 0 0 0 0 1 1 
+state.S_INIT_2 0 0 0 0 0 0 0 0 1 0 1 
+state.S_INIT_3 0 0 0 0 0 0 0 1 0 0 1 
+state.S_INIT_4 0 0 0 0 0 0 1 0 0 0 1 
+state.S_SET_LINE1 0 0 0 0 0 1 0 0 0 0 1 
+state.S_WR_LINE1 0 0 0 0 1 0 0 0 0 0 1 
+state.S_TG_LINE1 0 0 0 1 0 0 0 0 0 0 1 
+state.S_SET_LINE2 0 0 1 0 0 0 0 0 0 0 1 
+state.S_WR_LINE2 0 1 0 0 0 0 0 0 0 0 1 
+state.S_TG_LINE2 1 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |Processador|dma_controller:DMA1|state
+Name state.S_DONE state.S_WRITE_RAM state.S_READ_HD state.S_IDLE 
+state.S_IDLE 0 0 0 0 
+state.S_READ_HD 0 0 1 1 
+state.S_WRITE_RAM 0 1 0 1 
+state.S_DONE 1 0 0 1 

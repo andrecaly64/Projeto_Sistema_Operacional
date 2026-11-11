@@ -1,6 +1,6 @@
 Flow report for Processador
-Mon Aug 31 19:40:30 2026
-Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
+Tue Nov 10 22:54:10 2026
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
 ---------------------
@@ -38,26 +38,26 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+--------------------------------------------------------------------------------------+
-; Flow Summary                                                                         ;
-+------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Mon Aug 31 19:40:30 2026           ;
-; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Standard Edition ;
-; Revision Name                      ; Processador                                     ;
-; Top-level Entity Name              ; Processador                                     ;
-; Family                             ; Cyclone IV E                                    ;
-; Device                             ; EP4CE115F29C7                                   ;
-; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 5,407 / 114,480 ( 5 % )                         ;
-;     Total combinational functions  ; 5,141 / 114,480 ( 4 % )                         ;
-;     Dedicated logic registers      ; 705 / 114,480 ( < 1 % )                         ;
-; Total registers                    ; 705                                             ;
-; Total pins                         ; 502 / 529 ( 95 % )                              ;
-; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 33,760 / 3,981,312 ( < 1 % )                    ;
-; Embedded Multiplier 9-bit elements ; 6 / 532 ( 1 % )                                 ;
-; Total PLLs                         ; 0 / 4 ( 0 % )                                   ;
-+------------------------------------+-------------------------------------------------+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Tue Nov 10 22:54:10 2026       ;
+; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name                      ; Processador                                 ;
+; Top-level Entity Name              ; Processador                                 ;
+; Family                             ; Cyclone IV E                                ;
+; Device                             ; EP4CE115F29C7                               ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; 7,383 / 114,480 ( 6 % )                     ;
+;     Total combinational functions  ; 7,170 / 114,480 ( 6 % )                     ;
+;     Dedicated logic registers      ; 1,276 / 114,480 ( 1 % )                     ;
+; Total registers                    ; 1276                                        ;
+; Total pins                         ; 483 / 529 ( 91 % )                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 197,632 / 3,981,312 ( 5 % )                 ;
+; Embedded Multiplier 9-bit elements ; 6 / 532 ( 1 % )                             ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
++------------------------------------+---------------------------------------------+
 
 
 +-----------------------------------------+
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 08/31/2026 19:39:33 ;
+; Start date & time ; 11/10/2026 22:52:54 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Processador         ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 925253328849.178821597218792           ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 925253328849.179436197444399           ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
@@ -100,12 +100,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:18     ; 1.0                     ; 479 MB              ; 00:00:28                           ;
-; Fitter               ; 00:00:28     ; 1.0                     ; 935 MB              ; 00:00:36                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 374 MB              ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:04     ; 1.1                     ; 542 MB              ; 00:00:04                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 631 MB              ; 00:00:01                           ;
-; Total                ; 00:00:55     ; --                      ; --                  ; 00:01:12                           ;
+; Analysis & Synthesis ; 00:00:22     ; 1.0                     ; 495 MB              ; 00:00:32                           ;
+; Fitter               ; 00:00:38     ; 1.0                     ; 959 MB              ; 00:00:48                           ;
+; Assembler            ; 00:00:04     ; 1.0                     ; 382 MB              ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:06     ; 1.1                     ; 700 MB              ; 00:00:06                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 641 MB              ; 00:00:02                           ;
+; Total                ; 00:01:11     ; --                      ; --                  ; 00:01:31                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -114,11 +114,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+------------------------+----------------+------------+----------------+
 ; Module Name          ; Machine Hostname       ; OS Name        ; OS Version ; Processor type ;
 +----------------------+------------------------+----------------+------------+----------------+
-; Analysis & Synthesis ; andre-Inspiron-15-3511 ; Ubuntu 24.04.4 ; 24         ; x86_64         ;
-; Fitter               ; andre-Inspiron-15-3511 ; Ubuntu 24.04.4 ; 24         ; x86_64         ;
-; Assembler            ; andre-Inspiron-15-3511 ; Ubuntu 24.04.4 ; 24         ; x86_64         ;
-; Timing Analyzer      ; andre-Inspiron-15-3511 ; Ubuntu 24.04.4 ; 24         ; x86_64         ;
-; EDA Netlist Writer   ; andre-Inspiron-15-3511 ; Ubuntu 24.04.4 ; 24         ; x86_64         ;
+; Analysis & Synthesis ; andre-Inspiron-15-3511 ; Ubuntu 24.04.5 ; 24         ; x86_64         ;
+; Fitter               ; andre-Inspiron-15-3511 ; Ubuntu 24.04.5 ; 24         ; x86_64         ;
+; Assembler            ; andre-Inspiron-15-3511 ; Ubuntu 24.04.5 ; 24         ; x86_64         ;
+; Timing Analyzer      ; andre-Inspiron-15-3511 ; Ubuntu 24.04.5 ; 24         ; x86_64         ;
+; EDA Netlist Writer   ; andre-Inspiron-15-3511 ; Ubuntu 24.04.5 ; 24         ; x86_64         ;
 +----------------------+------------------------+----------------+------------+----------------+
 
 
