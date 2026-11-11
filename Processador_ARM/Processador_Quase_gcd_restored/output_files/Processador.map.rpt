@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Processador
-Tue Nov 10 22:53:17 2026
+Wed Nov 11 14:56:35 2026
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -101,7 +101,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Nov 10 22:53:17 2026       ;
+; Analysis & Synthesis Status        ; Successful - Wed Nov 11 14:56:35 2026       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; Processador                                 ;
 ; Top-level Entity Name              ; Processador                                 ;
@@ -1901,7 +1901,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:12     ;
+; Top            ; 00:00:15     ;
 +----------------+--------------+
 
 
@@ -1911,7 +1911,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Tue Nov 10 22:52:54 2026
+    Info: Processing started: Wed Nov 11 14:56:08 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Processador -c Processador
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -2024,7 +2024,7 @@ Warning (10030): Net "rom.data_a" at bios_rom.v(7) has no driver or initial valu
 Warning (10030): Net "rom.waddr_a" at bios_rom.v(7) has no driver or initial value, using a default initial value '0' File: /home/andre/Documentos/Laboratorio_de_Compiladores/Compilador_C_Minus/Processador_ARM/Processador_Quase_gcd_restored/bios_rom.v Line: 7
 Warning (10030): Net "rom.we_a" at bios_rom.v(7) has no driver or initial value, using a default initial value '0' File: /home/andre/Documentos/Laboratorio_de_Compiladores/Compilador_C_Minus/Processador_ARM/Processador_Quase_gcd_restored/bios_rom.v Line: 7
 Info (12128): Elaborating entity "memoria_ram_intrucoes" for hierarchy "memoria_ram_intrucoes:B2" File: /home/andre/Documentos/Laboratorio_de_Compiladores/Compilador_C_Minus/Processador_ARM/Processador_Quase_gcd_restored/Processador.v Line: 170
-Warning (10850): Verilog HDL warning at memoria_ram_instrucoes.v(13): number of words (64) in memory file does not match the number of elements in the address range [0:1023] File: /home/andre/Documentos/Laboratorio_de_Compiladores/Compilador_C_Minus/Processador_ARM/Processador_Quase_gcd_restored/memoria_ram_instrucoes.v Line: 13
+Warning (10850): Verilog HDL warning at memoria_ram_instrucoes.v(13): number of words (63) in memory file does not match the number of elements in the address range [0:1023] File: /home/andre/Documentos/Laboratorio_de_Compiladores/Compilador_C_Minus/Processador_ARM/Processador_Quase_gcd_restored/memoria_ram_instrucoes.v Line: 13
 Info (12128): Elaborating entity "hd_emulado" for hierarchy "hd_emulado:HD1" File: /home/andre/Documentos/Laboratorio_de_Compiladores/Compilador_C_Minus/Processador_ARM/Processador_Quase_gcd_restored/Processador.v Line: 174
 Warning (10850): Verilog HDL warning at hd_emulado.v(10): number of words (128) in memory file does not match the number of elements in the address range [0:4095] File: /home/andre/Documentos/Laboratorio_de_Compiladores/Compilador_C_Minus/Processador_ARM/Processador_Quase_gcd_restored/hd_emulado.v Line: 10
 Warning (10030): Net "storage.data_a" at hd_emulado.v(7) has no driver or initial value, using a default initial value '0' File: /home/andre/Documentos/Laboratorio_de_Compiladores/Compilador_C_Minus/Processador_ARM/Processador_Quase_gcd_restored/hd_emulado.v Line: 7
@@ -2721,8 +2721,8 @@ Info (21057): Implemented 8910 device resources after synthesis - the final reso
     Info (21062): Implemented 6 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 290 warnings
     Info: Peak virtual memory: 495 megabytes
-    Info: Processing ended: Tue Nov 10 22:53:17 2026
-    Info: Elapsed time: 00:00:23
-    Info: Total CPU time (on all processors): 00:00:33
+    Info: Processing ended: Wed Nov 11 14:56:35 2026
+    Info: Elapsed time: 00:00:27
+    Info: Total CPU time (on all processors): 00:00:38
 
 

@@ -1,6 +1,8 @@
 // ====================================================================
-// SETOR 0: SUPERBLOCO E METADADOS DO HD (Linhas 0 a 63)
+// IMAGEM HD PARA: Bateria D: Isolamento de Pilhas (sp) e Integridade
+// Fonte: 05_teste_pilhas_isoladas.s (5 labels)
 // ====================================================================
+// SETOR 0: SUPERBLOCO (Palavras 0 a 63)
 0000CAFE
 00000040
 0000000A
@@ -65,109 +67,68 @@
 00000000
 00000000
 00000000
-
-// ====================================================================
-// SETOR 1: KERNEL COM RETORNO BLINDADO E TROCA DE PID
-// ====================================================================
-// Palavra 0 (RAM 0): B 11 (Salto direto para a main_so)
+// SETOR 1: KERNEL DE TESTE (Palavras 64 a 127 -> RAM 0 a 63)
 E800000B
-// Palavra 1 (RAM 1): NOP
 EE000000
-// Palavra 2 (RAM 2): NOP
 EE000000
-// Palavra 3 (RAM 3): NOP
 EE000000
-
-// --------------------------------------------------------------------
-// VETOR DE INTERRUPÇÃO (RAM 4 a 10)
-// --------------------------------------------------------------------
-// Palavra 4 (RAM 4 - Vetor ISR): MOV r3, #1
-E3F00C01
-// Palavra 5 (RAM 5): MOV r4, #1006 (0x3EE - Timer Ack)
-E3F013EE
-// Palavra 6 (RAM 6): STR r3, [r4, #0] (Limpa a interrupção no Timer)
-E4020C00
-// Palavra 7 (RAM 7): MOV r3, #2 (PID = 2)
-E3F00C02
-// Palavra 8 (RAM 8): MOV r4, #1007 (0x3EF - Registrador PID do LCD)
-E3F013EF
-// Palavra 9 (RAM 9): STR r3, [r4, #0] (Atualiza LCD para PID: 2!)
-E4020C00
-// Palavra 10 (RAM 10): RETI (Retorna da interrupção com segurança)
-EC600000
-
-// --------------------------------------------------------------------
-// MAIN_SO (RAM 11 a 21)
-// --------------------------------------------------------------------
-// Palavra 11 (RAM 11): MOV r1, #1007 (Registrador PID do LCD)
-E3F007EF
-// Palavra 12 (RAM 12): MOV r2, #1 (PID inicial = 1)
-E3F00801
-// Palavra 13 (RAM 13): STR r2, [r1, #0] (Grava PID: 1 no LCD)
-E4008800
-// Palavra 14 (RAM 14): MOV r1, #1004 (Timer Limit)
-E3F007EC
-// Palavra 15 (RAM 15): MOV r2, #25 (Limite = 25 ciclos = ~5 segundos a 5 Hz)
-E3F00819
-// Palavra 16 (RAM 16): STR r2, [r1, #0] (Grava limite no Timer)
-E4008800
-// Palavra 17 (RAM 17): MOV r1, #1005 (Timer Enable)
-E3F007ED
-// Palavra 18 (RAM 18): MOV r2, #1
-E3F00801
-// Palavra 19 (RAM 19): STR r2, [r1, #0] (Liga o Timer)
-E4008800
-// Palavra 20 (RAM 20): STI (Habilita Interrupções Globais)
+EE000000
+E3F003EE
+E3F00401
+E4000400
+E3F001F3
+E4100C00
+E800001F
+EC400000
+E3F001C6
+E3F004C8
+E4000400
+E3F005A4
+E4000401
+E3F01001
+E3F001F3
+E4001000
+E3F003EF
+E4001000
+E3F003EC
+E3F00841
+E4000800
+E3F003ED
+E4001000
+E3F0080A
+E3F03590
 EC500000
-// Palavra 21 (RAM 21): MOV r0, #0 (Inicializa contador em 0)
-E3F00000
-
-// --------------------------------------------------------------------
-// LOOP DE CONTAGEM COM REDE DE PROTEÇÃO CONTRA FUGA (RAM 22 a 63)
-// --------------------------------------------------------------------
-// Palavra 22 (RAM 22 - Loop): OUT r0
-EC100000
-// Palavra 23 (RAM 23): ADDI r0, r0, #1
-E2800001
-// Palavra 24 (RAM 24): B 22
-E8000016
-// Palavras 25 a 63: Todas com B 22 (Proteção total para o RETI nunca cair fora do loop)
-E8000016
-E8000016
-E8000016
-E8000016
-E8000016
-E8000016
-E8000016
-E8000016
-E8000016
-E8000016
-E8000016
-E8000016
-E8000016
-E8000016
-E8000016
-E8000016
-E8000016
-E8000016
-E8000016
-E8000016
-E8000016
-E8000016
-E8000016
-E8000016
-E8000016
-E8000016
-E8000016
-E8000016
-E8000016
-E8000016
-E8000016
-E8000016
-E8000016
-E8000016
-E8000016
-E8000016
-E8000016
-E8000016
-E8000016
+E8000033
+E3F01803
+E0A31060
+E4001000
+E3F003EF
+E4001000
+E3F001C2
+E0800060
+E0800060
+E4000800
+E4003401
+E3F001C2
+E0800080
+E0800080
+E4100800
+E4103401
+EC600000
+EC400000
+E3F00994
+EC110000
+E800002F
+E2A6B401
+E4069000
+EC110000
+E2810801
+EC400000
+E4169C00
+E286B401
+E0A38C80
+08000000
+E800002F
+EC500000
+E8000033
+E8000033

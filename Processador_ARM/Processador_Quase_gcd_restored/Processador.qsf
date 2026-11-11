@@ -98,7 +98,7 @@ set_location_assignment PIN_L26 -to seg0[3]
 set_location_assignment PIN_L25 -to seg0[4]
 set_location_assignment PIN_J22 -to seg0[5]
 set_location_assignment PIN_H22 -to seg0[6]
-set_location_assignment PIN_AG25 -to reset
+set_location_assignment PIN_Y23 -to reset
 set_global_assignment -name ENABLE_OCT_DONE OFF
 set_global_assignment -name ENABLE_CONFIGURATION_PINS OFF
 set_global_assignment -name ENABLE_BOOT_SEL_PIN OFF
@@ -145,7 +145,7 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform98.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform99.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform100.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform101.vwf
-set_location_assignment PIN_AD22 -to key
+set_location_assignment PIN_Y24 -to key
 set_location_assignment PIN_AB19 -to seg4[0]
 set_location_assignment PIN_AA19 -to seg4[1]
 set_location_assignment PIN_AG21 -to seg4[2]

@@ -70,44 +70,44 @@ CHIP  "Processador"  ASSIGNED TO AN: EP4CE115F29C7
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
 VCCIO8                       : A2        : power  :                   : 2.5V    : 8         :                
-dado_leitura[29]             : A3        : output : 2.5 V             :         : 8         : N              
-endereco_escrita[19]         : A4        : output : 2.5 V             :         : 8         : N              
+prox_pc_final[7]             : A3        : output : 2.5 V             :         : 8         : N              
+instrucao[30]                : A4        : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : A5        : power  :                   : 2.5V    : 8         :                
-endereco_leitura[9]          : A6        : output : 2.5 V             :         : 8         : N              
-dado_leitura[9]              : A7        : output : 2.5 V             :         : 8         : N              
-endereco_leitura[28]         : A8        : output : 2.5 V             :         : 8         : N              
+instrucao[10]                : A6        : output : 2.5 V             :         : 8         : N              
+pulso_fim                    : A7        : output : 2.5 V             :         : 8         : N              
+instrucao[26]                : A8        : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : A9        : power  :                   : 2.5V    : 8         :                
-dado_leitura[30]             : A10       : output : 2.5 V             :         : 8         : N              
-endereco_leitura[18]         : A11       : output : 2.5 V             :         : 8         : N              
-endereco_escrita[30]         : A12       : output : 2.5 V             :         : 8         : N              
+endereco_pc[5]               : A10       : output : 2.5 V             :         : 8         : N              
+negativo                     : A11       : output : 2.5 V             :         : 8         : N              
+escrita_mem                  : A12       : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : A13       : power  :                   : 2.5V    : 8         :                
 GND+                         : A14       :        :                   :         : 8         :                
 GND+                         : A15       :        :                   :         : 7         :                
 VCCIO7                       : A16       : power  :                   : 2.5V    : 7         :                
-saida_reg2[19]               : A17       : output : 2.5 V             :         : 7         : N              
-saida_reg2[4]                : A18       : output : 2.5 V             :         : 7         : N              
-dado_reg[13]                 : A19       : output : 2.5 V             :         : 7         : N              
+endereco_escrita[5]          : A17       : output : 2.5 V             :         : 7         : N              
+endereco_escrita[13]         : A18       : output : 2.5 V             :         : 7         : N              
+endereco_escrita[22]         : A19       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : A20       : power  :                   : 2.5V    : 7         :                
-saida_reg2[22]               : A21       : output : 2.5 V             :         : 7         : N              
-dado_reg[23]                 : A22       : output : 2.5 V             :         : 7         : N              
-RESERVED_INPUT               : A23       :        :                   :         : 7         :                
+endereco_escrita[10]         : A21       : output : 2.5 V             :         : 7         : N              
+dado_leitura[6]              : A22       : output : 2.5 V             :         : 7         : N              
+dado_leitura[20]             : A23       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : A24       : power  :                   : 2.5V    : 7         :                
-dado_escrita[29]             : A25       : output : 2.5 V             :         : 7         : N              
-RESERVED_INPUT               : A26       :        :                   :         : 7         :                
+imediato[1]                  : A25       : output : 2.5 V             :         : 7         : N              
+endereco_escrita[12]         : A26       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : A27       : power  :                   : 2.5V    : 7         :                
 VCCIO2                       : AA1       : power  :                   : 2.5V    : 2         :                
 GND                          : AA2       : gnd    :                   :         :           :                
-saida_reg2[2]                : AA3       : output : 2.5 V             :         : 2         : N              
-saida_reg1[0]                : AA4       : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT               : AA3       :        :                   :         : 2         :                
+RESERVED_INPUT               : AA4       :        :                   :         : 2         :                
 RESERVED_INPUT               : AA5       :        :                   :         : 2         :                
-instrucao[0]                 : AA6       : output : 2.5 V             :         : 2         : N              
-saida_reg1[20]               : AA7       : output : 2.5 V             :         : 2         : N              
-saida_reg2[17]               : AA8       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT               : AA6       :        :                   :         : 2         :                
+RESERVED_INPUT               : AA7       :        :                   :         : 2         :                
+positivo                     : AA8       : output : 2.5 V             :         : 3         : N              
 GNDA1                        : AA9       : gnd    :                   :         :           :                
-instrucao[5]                 : AA10      : output : 2.5 V             :         : 3         : N              
+reg_display7[3]              : AA10      : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AA11      : power  :                   : 2.5V    : 3         :                
-rd[3]                        : AA12      : output : 2.5 V             :         : 3         : N              
-rn[3]                        : AA13      : output : 2.5 V             :         : 3         : N              
+reg_display3[0]              : AA12      : output : 2.5 V             :         : 3         : N              
+r3[1]                        : AA13      : output : 2.5 V             :         : 3         : N              
 seg7[6]                      : AA14      : output : 2.5 V             :         : 3         : Y              
 seg6[5]                      : AA15      : output : 2.5 V             :         : 4         : Y              
 seg6[2]                      : AA16      : output : 2.5 V             :         : 4         : Y              
@@ -117,82 +117,82 @@ seg4[1]                      : AA19      : output : 2.5 V             :         
 GNDA4                        : AA20      : gnd    :                   :         :           :                
 seg3[3]                      : AA21      : output : 2.5 V             :         : 4         : Y              
 RESERVED_INPUT               : AA22      :        :                   :         : 5         :                
-RESERVED_INPUT               : AA23      :        :                   :         : 5         :                
-reg_display4[2]              : AA24      : output : 2.5 V             :         : 5         : N              
+dado_escrita[15]             : AA23      : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT               : AA24      :        :                   :         : 5         :                
 seg2[0]                      : AA25      : output : 2.5 V             :         : 5         : Y              
 seg2[1]                      : AA26      : output : 2.5 V             :         : 5         : Y              
 GND                          : AA27      : gnd    :                   :         :           :                
 VCCIO5                       : AA28      : power  :                   : 2.5V    : 5         :                
-instrucao[21]                : AB1       : output : 2.5 V             :         : 2         : N              
-prox_pc[4]                   : AB2       : output : 2.5 V             :         : 2         : N              
-prox_pc_final[2]             : AB3       : output : 2.5 V             :         : 2         : N              
-RESERVED_INPUT               : AB4       :        :                   :         : 2         :                
-saida_reg2[18]               : AB5       : output : 2.5 V             :         : 2         : N              
-dado_escrita[10]             : AB6       : output : 2.5 V             :         : 2         : N              
-saida_reg2[7]                : AB7       : output : 2.5 V             :         : 3         : N              
-rm[4]                        : AB8       : output : 2.5 V             :         : 3         : N              
-instrucao[9]                 : AB9       : output : 2.5 V             :         : 3         : N              
-instrucao[13]                : AB10      : output : 2.5 V             :         : 3         : N              
-prox_pc_final[7]             : AB11      : output : 2.5 V             :         : 3         : N              
-instrucao[11]                : AB12      : output : 2.5 V             :         : 3         : N              
-instrucao[18]                : AB13      : output : 2.5 V             :         : 3         : N              
-dado_reg[1]                  : AB14      : output : 2.5 V             :         : 3         : N              
+saida_reg2[13]               : AB1       : output : 2.5 V             :         : 2         : N              
+dado_reg[20]                 : AB2       : output : 2.5 V             :         : 2         : N              
+dado_reg[25]                 : AB3       : output : 2.5 V             :         : 2         : N              
+dado_escrita[23]             : AB4       : output : 2.5 V             :         : 2         : N              
+reg_display4[0]              : AB5       : output : 2.5 V             :         : 2         : N              
+reg_display4[2]              : AB6       : output : 2.5 V             :         : 2         : N              
+dado_escrita[24]             : AB7       : output : 2.5 V             :         : 3         : N              
+instrucao[1]                 : AB8       : output : 2.5 V             :         : 3         : N              
+reg_display4[1]              : AB9       : output : 2.5 V             :         : 3         : N              
+dado_reg[29]                 : AB10      : output : 2.5 V             :         : 3         : N              
+dado_reg[0]                  : AB11      : output : 2.5 V             :         : 3         : N              
+r3[18]                       : AB12      : output : 2.5 V             :         : 3         : N              
+rd[1]                        : AB13      : output : 2.5 V             :         : 3         : N              
+r3[31]                       : AB14      : output : 2.5 V             :         : 3         : N              
 seg6[4]                      : AB15      : output : 2.5 V             :         : 4         : Y              
 seg6[1]                      : AB16      : output : 2.5 V             :         : 4         : Y              
 seg6[3]                      : AB17      : output : 2.5 V             :         : 4         : Y              
 seg5[2]                      : AB18      : output : 2.5 V             :         : 4         : Y              
 seg4[0]                      : AB19      : output : 2.5 V             :         : 4         : Y              
 seg3[2]                      : AB20      : output : 2.5 V             :         : 4         : Y              
-dado_escrita[5]              : AB21      : output : 2.5 V             :         : 4         : N              
+reg_display6[2]              : AB21      : output : 2.5 V             :         : 4         : N              
 botao_bruto                  : AB22      : input  : 2.5 V             :         : 4         : Y              
-RESERVED_INPUT               : AB23      :        :                   :         : 5         :                
-RESERVED_INPUT               : AB24      :        :                   :         : 5         :                
-saida_reg1[13]               : AB25      : output : 2.5 V             :         : 5         : N              
-dado_reg[16]                 : AB26      : output : 2.5 V             :         : 5         : N              
-r3[7]                        : AB27      : output : 2.5 V             :         : 5         : N              
-instrucao[19]                : AB28      : output : 2.5 V             :         : 5         : N              
-prox_pc[3]                   : AC1       : output : 2.5 V             :         : 2         : N              
-endereco_pc[9]               : AC2       : output : 2.5 V             :         : 2         : N              
-instrucao[23]                : AC3       : output : 2.5 V             :         : 2         : N              
-dado_escrita[17]             : AC4       : output : 2.5 V             :         : 2         : N              
-reg_display7[1]              : AC5       : output : 2.5 V             :         : 2         : N              
+dado_escrita[31]             : AB23      : output : 2.5 V             :         : 5         : N              
+instrucao[29]                : AB24      : output : 2.5 V             :         : 5         : N              
+saida_reg1[6]                : AB25      : output : 2.5 V             :         : 5         : N              
+saida_reg1[30]               : AB26      : output : 2.5 V             :         : 5         : N              
+reg_display2[1]              : AB27      : output : 2.5 V             :         : 5         : N              
+endereco_escrita[19]         : AB28      : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT               : AC1       :        :                   :         : 2         :                
+instrucao[19]                : AC2       : output : 2.5 V             :         : 2         : N              
+saida_reg2[2]                : AC3       : output : 2.5 V             :         : 2         : N              
+dado_escrita[30]             : AC4       : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT               : AC5       :        :                   :         : 2         :                
 GND                          : AC6       : gnd    :                   :         :           :                
-instrucao[29]                : AC7       : output : 2.5 V             :         : 3         : N              
-instrucao[3]                 : AC8       : output : 2.5 V             :         : 3         : N              
+dado_escrita[12]             : AC7       : output : 2.5 V             :         : 3         : N              
+dado_reg[21]                 : AC8       : output : 2.5 V             :         : 3         : N              
 GND                          : AC9       : gnd    :                   :         :           :                
-imediato[0]                  : AC10      : output : 2.5 V             :         : 3         : N              
-dado_reg[30]                 : AC11      : output : 2.5 V             :         : 3         : N              
-saida_reg1[25]               : AC12      : output : 2.5 V             :         : 3         : N              
+instrucao[11]                : AC10      : output : 2.5 V             :         : 3         : N              
+r3[3]                        : AC11      : output : 2.5 V             :         : 3         : N              
+reg_display3[3]              : AC12      : output : 2.5 V             :         : 3         : N              
 GND                          : AC13      : gnd    :                   :         :           :                
-r3[22]                       : AC14      : output : 2.5 V             :         : 3         : N              
-r3[18]                       : AC15      : output : 2.5 V             :         : 4         : N              
+r3[26]                       : AC14      : output : 2.5 V             :         : 3         : N              
+r3[20]                       : AC15      : output : 2.5 V             :         : 4         : N              
 GND                          : AC16      : gnd    :                   :         :           :                
 seg6[6]                      : AC17      : output : 2.5 V             :         : 4         : Y              
 seg5[1]                      : AC18      : output : 2.5 V             :         : 4         : Y              
 imm8[5]                      : AC19      : input  : 2.5 V             :         : 4         : Y              
 GND                          : AC20      : gnd    :                   :         :           :                
-RESERVED_INPUT               : AC21      :        :                   :         : 4         :                
+dado_escrita[13]             : AC21      : output : 2.5 V             :         : 4         : N              
 imm8_2[4]                    : AC22      : input  : 2.5 V             :         : 4         : Y              
 GND                          : AC23      : gnd    :                   :         :           :                
-reg_display7[2]              : AC24      : output : 2.5 V             :         : 5         : N              
-dado_escrita[24]             : AC25      : output : 2.5 V             :         : 5         : N              
-reg_display6[1]              : AC26      : output : 2.5 V             :         : 5         : N              
-dado_escrita[19]             : AC27      : output : 2.5 V             :         : 5         : N              
-dado_escrita[23]             : AC28      : output : 2.5 V             :         : 5         : N              
-pulso_fim                    : AD1       : output : 2.5 V             :         : 2         : N              
-instrucao[22]                : AD2       : output : 2.5 V             :         : 2         : N              
-prox_pc[1]                   : AD3       : output : 2.5 V             :         : 2         : N              
-dado_escrita[4]              : AD4       : output : 2.5 V             :         : 3         : N              
-dado_escrita[3]              : AD5       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT               : AC24      :        :                   :         : 5         :                
+cond[1]                      : AC25      : output : 2.5 V             :         : 5         : N              
+saida_reg1[1]                : AC26      : output : 2.5 V             :         : 5         : N              
+saida_reg2[20]               : AC27      : output : 2.5 V             :         : 5         : N              
+r3[16]                       : AC28      : output : 2.5 V             :         : 5         : N              
+r3[2]                        : AD1       : output : 2.5 V             :         : 2         : N              
+dado_escrita[3]              : AD2       : output : 2.5 V             :         : 2         : N              
+saida_reg1[10]               : AD3       : output : 2.5 V             :         : 2         : N              
+dado_escrita[22]             : AD4       : output : 2.5 V             :         : 3         : N              
+contador2[1]                 : AD5       : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AD6       : power  :                   : 2.5V    : 3         :                
-dado_escrita[16]             : AD7       : output : 2.5 V             :         : 3         : N              
-pc_fonte                     : AD8       : output : 2.5 V             :         : 3         : N              
+dado_escrita[1]              : AD7       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT               : AD8       :        :                   :         : 3         :                
 VCCIO3                       : AD9       : power  :                   : 2.5V    : 3         :                
-saida_reg2[26]               : AD10      : output : 2.5 V             :         : 3         : N              
-saida_reg1[2]                : AD11      : output : 2.5 V             :         : 3         : N              
-saida_reg1[26]               : AD12      : output : 2.5 V             :         : 3         : N              
+dado_escrita[25]             : AD10      : output : 2.5 V             :         : 3         : N              
+r3[10]                       : AD11      : output : 2.5 V             :         : 3         : N              
+rn[1]                        : AD12      : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AD13      : power  :                   : 2.5V    : 3         :                
-r3[23]                       : AD14      : output : 2.5 V             :         : 3         : N              
+saida_reg1[14]               : AD14      : output : 2.5 V             :         : 3         : N              
 imm8[3]                      : AD15      : input  : 2.5 V             :         : 4         : Y              
 VCCIO4                       : AD16      : power  :                   : 2.5V    : 4         :                
 seg7[0]                      : AD17      : output : 2.5 V             :         : 4         : Y              
@@ -200,81 +200,81 @@ seg5[0]                      : AD18      : output : 2.5 V             :         
 imm8[7]                      : AD19      : input  : 2.5 V             :         : 4         : Y              
 VCCIO4                       : AD20      : power  :                   : 2.5V    : 4         :                
 imm8[1]                      : AD21      : input  : 2.5 V             :         : 4         : Y              
-key                          : AD22      : input  : 2.5 V             :         : 4         : Y              
+dado_escrita[17]             : AD22      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AD23      : power  :                   : 2.5V    : 4         :                
 seg3[4]                      : AD24      : output : 2.5 V             :         : 4         : Y              
-r3[27]                       : AD25      : output : 2.5 V             :         : 4         : N              
-dado_escrita[12]             : AD26      : output : 2.5 V             :         : 5         : N              
-instrucao[15]                : AD27      : output : 2.5 V             :         : 5         : N              
-r3[15]                       : AD28      : output : 2.5 V             :         : 5         : N              
-instrucao[6]                 : AE1       : output : 2.5 V             :         : 2         : N              
-rm[1]                        : AE2       : output : 2.5 V             :         : 2         : N              
-instrucao[2]                 : AE3       : output : 2.5 V             :         : 2         : N              
-saida_reg2[20]               : AE4       : output : 2.5 V             :         : 3         : N              
-RESERVED_INPUT               : AE5       :        :                   :         : 3         :                
-botao_pressionado            : AE6       : output : 2.5 V             :         : 3         : N              
-saida_reg1[27]               : AE7       : output : 2.5 V             :         : 3         : N              
-saida_reg2[3]                : AE8       : output : 2.5 V             :         : 3         : N              
-imediato[1]                  : AE9       : output : 2.5 V             :         : 3         : N              
-endereco_escrita[24]         : AE10      : output : 2.5 V             :         : 3         : N              
-instrucao[20]                : AE11      : output : 2.5 V             :         : 3         : N              
-instrucao[8]                 : AE12      : output : 2.5 V             :         : 3         : N              
-dado_reg[6]                  : AE13      : output : 2.5 V             :         : 3         : N              
-rd[2]                        : AE14      : output : 2.5 V             :         : 3         : N              
+reg_display3[1]              : AD25      : output : 2.5 V             :         : 4         : N              
+reg_display2[3]              : AD26      : output : 2.5 V             :         : 5         : N              
+r3[15]                       : AD27      : output : 2.5 V             :         : 5         : N              
+saida_reg2[28]               : AD28      : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT               : AE1       :        :                   :         : 2         :                
+dado_escrita[10]             : AE2       : output : 2.5 V             :         : 2         : N              
+contador2[0]                 : AE3       : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT               : AE4       :        :                   :         : 3         :                
+reg_display7[2]              : AE5       : output : 2.5 V             :         : 3         : N              
+dado_escrita[18]             : AE6       : output : 2.5 V             :         : 3         : N              
+r3[11]                       : AE7       : output : 2.5 V             :         : 3         : N              
+saida_reg2[4]                : AE8       : output : 2.5 V             :         : 3         : N              
+cond[3]                      : AE9       : output : 2.5 V             :         : 3         : N              
+r3[9]                        : AE10      : output : 2.5 V             :         : 3         : N              
+instrucao[16]                : AE11      : output : 2.5 V             :         : 3         : N              
+rd[3]                        : AE12      : output : 2.5 V             :         : 3         : N              
+dado_reg[12]                 : AE13      : output : 2.5 V             :         : 3         : N              
+r3[0]                        : AE14      : output : 2.5 V             :         : 3         : N              
 imm8[4]                      : AE15      : input  : 2.5 V             :         : 4         : Y              
 imm8[2]                      : AE16      : input  : 2.5 V             :         : 4         : Y              
 seg7[1]                      : AE17      : output : 2.5 V             :         : 4         : Y              
 seg4[6]                      : AE18      : output : 2.5 V             :         : 4         : Y              
 seg4[4]                      : AE19      : output : 2.5 V             :         : 4         : Y              
-dado_reg[31]                 : AE20      : output : 2.5 V             :         : 4         : N              
+endereco_leitura[15]         : AE20      : output : 2.5 V             :         : 4         : N              
 imm8_2[2]                    : AE21      : input  : 2.5 V             :         : 4         : Y              
 imm8_2[5]                    : AE22      : input  : 2.5 V             :         : 4         : Y              
 dado_escrita[26]             : AE23      : output : 2.5 V             :         : 4         : N              
-dado_escrita[1]              : AE24      : output : 2.5 V             :         : 4         : N              
-dado_reg[20]                 : AE25      : output : 2.5 V             :         : 4         : N              
-RESERVED_INPUT               : AE26      :        :                   :         : 5         :                
-RESERVED_INPUT               : AE27      :        :                   :         : 5         :                
-r3[5]                        : AE28      : output : 2.5 V             :         : 5         : N              
+reg_display3[2]              : AE24      : output : 2.5 V             :         : 4         : N              
+saida_reg2[22]               : AE25      : output : 2.5 V             :         : 4         : N              
+saida_reg2[30]               : AE26      : output : 2.5 V             :         : 5         : N              
+r3[8]                        : AE27      : output : 2.5 V             :         : 5         : N              
+saida_reg1[0]                : AE28      : output : 2.5 V             :         : 5         : N              
 GND                          : AF1       : gnd    :                   :         :           :                
-instrucao[4]                 : AF2       : output : 2.5 V             :         : 2         : N              
-cond[0]                      : AF3       : output : 2.5 V             :         : 3         : N              
-reg_display5[3]              : AF4       : output : 2.5 V             :         : 3         : N              
-endereco_escrita[25]         : AF5       : output : 2.5 V             :         : 3         : N              
-escrita_reg                  : AF6       : output : 2.5 V             :         : 3         : N              
-prox_pc_final[5]             : AF7       : output : 2.5 V             :         : 3         : N              
-entrada_io                   : AF8       : output : 2.5 V             :         : 3         : N              
-instrucao[10]                : AF9       : output : 2.5 V             :         : 3         : N              
-travado                      : AF10      : output : 2.5 V             :         : 3         : N              
-operacao[2]                  : AF11      : output : 2.5 V             :         : 3         : N              
-rm[3]                        : AF12      : output : 2.5 V             :         : 3         : N              
-saida_reg1[4]                : AF13      : output : 2.5 V             :         : 3         : N              
-rd[1]                        : AF14      : output : 2.5 V             :         : 3         : N              
+dado_escrita[2]              : AF2       : output : 2.5 V             :         : 2         : N              
+reg_display5[2]              : AF3       : output : 2.5 V             :         : 3         : N              
+reg_display7[1]              : AF4       : output : 2.5 V             :         : 3         : N              
+dado_escrita[8]              : AF5       : output : 2.5 V             :         : 3         : N              
+botao_pressionado            : AF6       : output : 2.5 V             :         : 3         : N              
+cond[4]                      : AF7       : output : 2.5 V             :         : 3         : N              
+dado_reg[17]                 : AF8       : output : 2.5 V             :         : 3         : N              
+aguarda_botao                : AF9       : output : 2.5 V             :         : 3         : N              
+r3[28]                       : AF10      : output : 2.5 V             :         : 3         : N              
+dado_reg[3]                  : AF11      : output : 2.5 V             :         : 3         : N              
+instrucao[13]                : AF12      : output : 2.5 V             :         : 3         : N              
+saida_reg2[0]                : AF13      : output : 2.5 V             :         : 3         : N              
+r3[4]                        : AF14      : output : 2.5 V             :         : 3         : N              
 imm8_2[0]                    : AF15      : input  : 2.5 V             :         : 4         : Y              
 imm8[6]                      : AF16      : input  : 2.5 V             :         : 4         : Y              
 seg7[4]                      : AF17      : output : 2.5 V             :         : 4         : Y              
 seg5[5]                      : AF18      : output : 2.5 V             :         : 4         : Y              
 seg4[5]                      : AF19      : output : 2.5 V             :         : 4         : Y              
-dado_reg[8]                  : AF20      : output : 2.5 V             :         : 4         : N              
+saida_reg1[8]                : AF20      : output : 2.5 V             :         : 4         : N              
 imm8_2[6]                    : AF21      : input  : 2.5 V             :         : 4         : Y              
 imm8_2[7]                    : AF22      : input  : 2.5 V             :         : 4         : Y              
 seg3[5]                      : AF23      : output : 2.5 V             :         : 4         : Y              
 imm8_2[1]                    : AF24      : input  : 2.5 V             :         : 4         : Y              
 imm8_2[3]                    : AF25      : input  : 2.5 V             :         : 4         : Y              
-r3[17]                       : AF26      : output : 2.5 V             :         : 4         : N              
-reg_display4[0]              : AF27      : output : 2.5 V             :         : 5         : N              
+r3[23]                       : AF26      : output : 2.5 V             :         : 4         : N              
+reg_display1[0]              : AF27      : output : 2.5 V             :         : 5         : N              
 GND                          : AF28      : gnd    :                   :         :           :                
 VCCIO2                       : AG1       : power  :                   : 2.5V    : 2         :                
 GND                          : AG2       : gnd    :                   :         :           :                
-RESERVED_INPUT               : AG3       :        :                   :         : 3         :                
-instrucao[28]                : AG4       : output : 2.5 V             :         : 3         : N              
+dado_escrita[19]             : AG3       : output : 2.5 V             :         : 3         : N              
+reg_display5[3]              : AG4       : output : 2.5 V             :         : 3         : N              
 GND                          : AG5       : gnd    :                   :         :           :                
-cond[1]                      : AG6       : output : 2.5 V             :         : 3         : N              
-instrucao[1]                 : AG7       : output : 2.5 V             :         : 3         : N              
-rm[0]                        : AG8       : output : 2.5 V             :         : 3         : N              
+dado_escrita[7]              : AG6       : output : 2.5 V             :         : 3         : N              
+dado_escrita[29]             : AG7       : output : 2.5 V             :         : 3         : N              
+r3[12]                       : AG8       : output : 2.5 V             :         : 3         : N              
 GND                          : AG9       : gnd    :                   :         :           :                
-negativo                     : AG10      : output : 2.5 V             :         : 3         : N              
-instrucao[12]                : AG11      : output : 2.5 V             :         : 3         : N              
-saida_reg1[11]               : AG12      : output : 2.5 V             :         : 3         : N              
+dado_reg[2]                  : AG10      : output : 2.5 V             :         : 3         : N              
+instrucao[2]                 : AG11      : output : 2.5 V             :         : 3         : N              
+saida_reg1[9]                : AG12      : output : 2.5 V             :         : 3         : N              
 GND                          : AG13      : gnd    :                   :         :           :                
 GND+                         : AG14      :        :                   :         : 3         :                
 GND+                         : AG15      :        :                   :         : 4         :                
@@ -284,24 +284,24 @@ seg7[5]                      : AG18      : output : 2.5 V             :         
 seg5[4]                      : AG19      : output : 2.5 V             :         : 4         : Y              
 GND                          : AG20      : gnd    :                   :         :           :                
 seg4[2]                      : AG21      : output : 2.5 V             :         : 4         : Y              
-dado_reg[5]                  : AG22      : output : 2.5 V             :         : 4         : N              
-rd[4]                        : AG23      : output : 2.5 V             :         : 4         : N              
+saida_reg1[21]               : AG22      : output : 2.5 V             :         : 4         : N              
+saida_reg1[5]                : AG23      : output : 2.5 V             :         : 4         : N              
 GND                          : AG24      : gnd    :                   :         :           :                
-reset                        : AG25      : input  : 2.5 V             :         : 4         : Y              
-reg_display7[0]              : AG26      : output : 2.5 V             :         : 4         : N              
+dado_reg[5]                  : AG25      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT               : AG26      :        :                   :         : 4         :                
 GND                          : AG27      : gnd    :                   :         :           :                
 VCCIO5                       : AG28      : power  :                   : 2.5V    : 5         :                
 VCCIO3                       : AH2       : power  :                   : 2.5V    : 3         :                
-cond[3]                      : AH3       : output : 2.5 V             :         : 3         : N              
-instrucao[31]                : AH4       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT               : AH3       :        :                   :         : 3         :                
+RESERVED_INPUT               : AH4       :        :                   :         : 3         :                
 VCCIO3                       : AH5       : power  :                   : 2.5V    : 3         :                
-prox_pc[8]                   : AH6       : output : 2.5 V             :         : 3         : N              
-saida_reg2[24]               : AH7       : output : 2.5 V             :         : 3         : N              
-rd[0]                        : AH8       : output : 2.5 V             :         : 3         : N              
+reg_display5[1]              : AH6       : output : 2.5 V             :         : 3         : N              
+instrucao[31]                : AH7       : output : 2.5 V             :         : 3         : N              
+saida_reg2[8]                : AH8       : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AH9       : power  :                   : 2.5V    : 3         :                
-instrucao[26]                : AH10      : output : 2.5 V             :         : 3         : N              
-dado_reg[0]                  : AH11      : output : 2.5 V             :         : 3         : N              
-saida_reg1[3]                : AH12      : output : 2.5 V             :         : 3         : N              
+dado_reg[24]                 : AH10      : output : 2.5 V             :         : 3         : N              
+dado_reg[4]                  : AH11      : output : 2.5 V             :         : 3         : N              
+r3[30]                       : AH12      : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AH13      : power  :                   : 2.5V    : 3         :                
 GND+                         : AH14      :        :                   :         : 3         :                
 GND+                         : AH15      :        :                   :         : 4         :                
@@ -311,244 +311,244 @@ seg5[6]                      : AH18      : output : 2.5 V             :         
 seg5[3]                      : AH19      : output : 2.5 V             :         : 4         : Y              
 VCCIO4                       : AH20      : power  :                   : 2.5V    : 4         :                
 seg4[3]                      : AH21      : output : 2.5 V             :         : 4         : Y              
-dado_reg[2]                  : AH22      : output : 2.5 V             :         : 4         : N              
-instrucao[14]                : AH23      : output : 2.5 V             :         : 4         : N              
+endereco_escrita[24]         : AH22      : output : 2.5 V             :         : 4         : N              
+saida_reg1[18]               : AH23      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AH24      : power  :                   : 2.5V    : 4         :                
-r3[10]                       : AH25      : output : 2.5 V             :         : 4         : N              
-dado_escrita[6]              : AH26      : output : 2.5 V             :         : 4         : N              
+saida_reg2[7]                : AH25      : output : 2.5 V             :         : 4         : N              
+dado_escrita[0]              : AH26      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AH27      : power  :                   : 2.5V    : 4         :                
 VCCIO1                       : B1        : power  :                   : 2.5V    : 1         :                
 GND                          : B2        : gnd    :                   :         :           :                
-dado_leitura[31]             : B3        : output : 2.5 V             :         : 8         : N              
-dado_leitura[19]             : B4        : output : 2.5 V             :         : 8         : N              
+dado_leitura[24]             : B3        : output : 2.5 V             :         : 8         : N              
+prox_pc_final[0]             : B4        : output : 2.5 V             :         : 8         : N              
 GND                          : B5        : gnd    :                   :         :           :                
-endereco_escrita[26]         : B6        : output : 2.5 V             :         : 8         : N              
-dado_leitura[23]             : B7        : output : 2.5 V             :         : 8         : N              
-endereco_leitura[12]         : B8        : output : 2.5 V             :         : 8         : N              
+rd[0]                        : B6        : output : 2.5 V             :         : 8         : N              
+endereco_pc[4]               : B7        : output : 2.5 V             :         : 8         : N              
+prox_pc[8]                   : B8        : output : 2.5 V             :         : 8         : N              
 GND                          : B9        : gnd    :                   :         :           :                
-endereco_escrita[27]         : B10       : output : 2.5 V             :         : 8         : N              
-dado_leitura[16]             : B11       : output : 2.5 V             :         : 8         : N              
+travado                      : B10       : output : 2.5 V             :         : 8         : N              
+operacao[2]                  : B11       : output : 2.5 V             :         : 8         : N              
 GND                          : B12       : gnd    :                   :         :           :                
 GND                          : B13       : gnd    :                   :         :           :                
 GND+                         : B14       :        :                   :         : 8         :                
 GND+                         : B15       :        :                   :         : 7         :                
 GND                          : B16       : gnd    :                   :         :           :                
-saida_reg2[8]                : B17       : output : 2.5 V             :         : 7         : N              
-saida_reg2[16]               : B18       : output : 2.5 V             :         : 7         : N              
-dado_reg[15]                 : B19       : output : 2.5 V             :         : 7         : N              
+sinal_mult2                  : B17       : output : 2.5 V             :         : 7         : N              
+dado_leitura[18]             : B18       : output : 2.5 V             :         : 7         : N              
+endereco_leitura[8]          : B19       : output : 2.5 V             :         : 7         : N              
 GND                          : B20       : gnd    :                   :         :           :                
-dado_reg[25]                 : B21       : output : 2.5 V             :         : 7         : N              
-r3[20]                       : B22       : output : 2.5 V             :         : 7         : N              
-positivo                     : B23       : output : 2.5 V             :         : 7         : N              
+dado_leitura[21]             : B21       : output : 2.5 V             :         : 7         : N              
+dado_leitura[31]             : B22       : output : 2.5 V             :         : 7         : N              
+dado_leitura[19]             : B23       : output : 2.5 V             :         : 7         : N              
 GND                          : B24       : gnd    :                   :         :           :                
-reg_display0[2]              : B25       : output : 2.5 V             :         : 7         : N              
-reg_display6[3]              : B26       : output : 2.5 V             :         : 7         : N              
+entrada_io                   : B25       : output : 2.5 V             :         : 7         : N              
+dado_leitura[15]             : B26       : output : 2.5 V             :         : 7         : N              
 GND                          : B27       : gnd    :                   :         :           :                
 VCCIO6                       : B28       : power  :                   : 2.5V    : 6         :                
 GND                          : C1        : gnd    :                   :         :           :                
-aguarda_botao                : C2        : output : 2.5 V             :         : 1         : N              
-reg_display5[0]              : C3        : output : 2.5 V             :         : 8         : N              
-endereco_leitura[14]         : C4        : output : 2.5 V             :         : 8         : N              
-endereco_escrita[18]         : C5        : output : 2.5 V             :         : 8         : N              
-dado_leitura[5]              : C6        : output : 2.5 V             :         : 8         : N              
-endereco_leitura[25]         : C7        : output : 2.5 V             :         : 8         : N              
-dado_leitura[17]             : C8        : output : 2.5 V             :         : 8         : N              
-endereco_leitura[16]         : C9        : output : 2.5 V             :         : 8         : N              
-endereco_leitura[24]         : C10       : output : 2.5 V             :         : 8         : N              
-endereco_escrita[17]         : C11       : output : 2.5 V             :         : 8         : N              
-dado_leitura[11]             : C12       : output : 2.5 V             :         : 8         : N              
-operando_ula                 : C13       : output : 2.5 V             :         : 8         : N              
-saida_reg1[21]               : C14       : output : 2.5 V             :         : 8         : N              
-saida_reg1[16]               : C15       : output : 2.5 V             :         : 7         : N              
-saida_reg2[11]               : C16       : output : 2.5 V             :         : 7         : N              
-saida_reg1[18]               : C17       : output : 2.5 V             :         : 7         : N              
-reg_display6[2]              : C18       : output : 2.5 V             :         : 7         : N              
-dado_reg[10]                 : C19       : output : 2.5 V             :         : 7         : N              
-saida_reg2[14]               : C20       : output : 2.5 V             :         : 7         : N              
-RESERVED_INPUT               : C21       :        :                   :         : 7         :                
-r3[30]                       : C22       : output : 2.5 V             :         : 7         : N              
-reg_display0[1]              : C23       : output : 2.5 V             :         : 7         : N              
-reg_display0[0]              : C24       : output : 2.5 V             :         : 7         : N              
-RESERVED_INPUT               : C25       :        :                   :         : 7         :                
-dado_escrita[14]             : C26       : output : 2.5 V             :         : 7         : N              
-RESERVED_INPUT               : C27       :        :                   :         : 6         :                
+RESERVED_INPUT               : C2        :        :                   :         : 1         :                
+dado_escrita[28]             : C3        : output : 2.5 V             :         : 8         : N              
+instrucao[5]                 : C4        : output : 2.5 V             :         : 8         : N              
+prox_pc_final[5]             : C5        : output : 2.5 V             :         : 8         : N              
+rm[1]                        : C6        : output : 2.5 V             :         : 8         : N              
+endereco_escrita[1]          : C7        : output : 2.5 V             :         : 8         : N              
+prox_pc[0]                   : C8        : output : 2.5 V             :         : 8         : N              
+pc_fonte                     : C9        : output : 2.5 V             :         : 8         : N              
+endereco_pc[2]               : C10       : output : 2.5 V             :         : 8         : N              
+dado_reg[15]                 : C11       : output : 2.5 V             :         : 8         : N              
+operando_ula                 : C12       : output : 2.5 V             :         : 8         : N              
+imediato[0]                  : C13       : output : 2.5 V             :         : 8         : N              
+dado_leitura[0]              : C14       : output : 2.5 V             :         : 8         : N              
+endereco_escrita[6]          : C15       : output : 2.5 V             :         : 7         : N              
+endereco_escrita[9]          : C16       : output : 2.5 V             :         : 7         : N              
+endereco_leitura[4]          : C17       : output : 2.5 V             :         : 7         : N              
+endereco_leitura[17]         : C18       : output : 2.5 V             :         : 7         : N              
+endereco_leitura[14]         : C19       : output : 2.5 V             :         : 7         : N              
+saida_reg2[16]               : C20       : output : 2.5 V             :         : 7         : N              
+endereco_leitura[16]         : C21       : output : 2.5 V             :         : 7         : N              
+endereco_leitura[26]         : C22       : output : 2.5 V             :         : 7         : N              
+saida_reg2[24]               : C23       : output : 2.5 V             :         : 7         : N              
+endereco_escrita[18]         : C24       : output : 2.5 V             :         : 7         : N              
+endereco_leitura[27]         : C25       : output : 2.5 V             :         : 7         : N              
+endereco_escrita[14]         : C26       : output : 2.5 V             :         : 7         : N              
+endereco_escrita[20]         : C27       : output : 2.5 V             :         : 6         : N              
 GND                          : C28       : gnd    :                   :         :           :                
-dado_escrita[20]             : D1        : output : 2.5 V             :         : 1         : N              
-reg_display6[0]              : D2        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT               : D1        :        :                   :         : 1         :                
+dado_escrita[11]             : D2        : output : 2.5 V             :         : 1         : N              
 GND                          : D3        : gnd    :                   :         :           :                
-dado_escrita[15]             : D4        : output : 2.5 V             :         : 8         : N              
-dado_escrita[18]             : D5        : output : 2.5 V             :         : 8         : N              
-endereco_leitura[13]         : D6        : output : 2.5 V             :         : 8         : N              
-dado_leitura[26]             : D7        : output : 2.5 V             :         : 8         : N              
-endereco_leitura[11]         : D8        : output : 2.5 V             :         : 8         : N              
-endereco_leitura[10]         : D9        : output : 2.5 V             :         : 8         : N              
-endereco_leitura[1]          : D10       : output : 2.5 V             :         : 8         : N              
-dado_leitura[12]             : D11       : output : 2.5 V             :         : 8         : N              
-saida_reg1[5]                : D12       : output : 2.5 V             :         : 8         : N              
-saida_reg1[9]                : D13       : output : 2.5 V             :         : 8         : N              
-saida_reg2[9]                : D14       : output : 2.5 V             :         : 8         : N              
-saida_reg1[8]                : D15       : output : 2.5 V             :         : 7         : N              
-saida_reg2[12]               : D16       : output : 2.5 V             :         : 7         : N              
-saida_reg1[6]                : D17       : output : 2.5 V             :         : 7         : N              
-saida_reg2[13]               : D18       : output : 2.5 V             :         : 7         : N              
-dado_reg[12]                 : D19       : output : 2.5 V             :         : 7         : N              
-endereco_leitura[21]         : D20       : output : 2.5 V             :         : 7         : N              
-dado_escrita[21]             : D21       : output : 2.5 V             :         : 7         : N              
-reg_display5[1]              : D22       : output : 2.5 V             :         : 7         : N              
-dado_escrita[28]             : D23       : output : 2.5 V             :         : 7         : N              
-reg_display0[3]              : D24       : output : 2.5 V             :         : 7         : N              
-RESERVED_INPUT               : D25       :        :                   :         : 7         :                
-dado_escrita[25]             : D26       : output : 2.5 V             :         : 6         : N              
-dado_escrita[13]             : D27       : output : 2.5 V             :         : 6         : N              
-RESERVED_INPUT               : D28       :        :                   :         : 6         :                
-saida_reg1[28]               : E1        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT               : D4        :        :                   :         : 8         :                
+rm[0]                        : D5        : output : 2.5 V             :         : 8         : N              
+saida_reg2[18]               : D6        : output : 2.5 V             :         : 8         : N              
+prox_pc_final[6]             : D7        : output : 2.5 V             :         : 8         : N              
+dado_leitura[7]              : D8        : output : 2.5 V             :         : 8         : N              
+dado_leitura[8]              : D9        : output : 2.5 V             :         : 8         : N              
+endereco_pc[1]               : D10       : output : 2.5 V             :         : 8         : N              
+endereco_escrita[0]          : D11       : output : 2.5 V             :         : 8         : N              
+operacao[3]                  : D12       : output : 2.5 V             :         : 8         : N              
+saida_reg2[5]                : D13       : output : 2.5 V             :         : 8         : N              
+operacao[1]                  : D14       : output : 2.5 V             :         : 8         : N              
+dado_leitura[10]             : D15       : output : 2.5 V             :         : 7         : N              
+endereco_escrita[3]          : D16       : output : 2.5 V             :         : 7         : N              
+endereco_leitura[5]          : D17       : output : 2.5 V             :         : 7         : N              
+endereco_escrita[16]         : D18       : output : 2.5 V             :         : 7         : N              
+endereco_leitura[7]          : D19       : output : 2.5 V             :         : 7         : N              
+endereco_leitura[10]         : D20       : output : 2.5 V             :         : 7         : N              
+endereco_escrita[27]         : D21       : output : 2.5 V             :         : 7         : N              
+dado_leitura[17]             : D22       : output : 2.5 V             :         : 7         : N              
+dado_leitura[2]              : D23       : output : 2.5 V             :         : 7         : N              
+endereco_leitura[18]         : D24       : output : 2.5 V             :         : 7         : N              
+endereco_escrita[11]         : D25       : output : 2.5 V             :         : 7         : N              
+dado_leitura[16]             : D26       : output : 2.5 V             :         : 6         : N              
+endereco_escrita[23]         : D27       : output : 2.5 V             :         : 6         : N              
+saida_reg2[15]               : D28       : output : 2.5 V             :         : 6         : N              
+prox_pc[2]                   : E1        : output : 2.5 V             :         : 1         : N              
 ~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : E2        : input  : 2.5 V             :         : 1         : N              
-instrucao[7]                 : E3        : output : 2.5 V             :         : 1         : N              
-endereco_escrita[10]         : E4        : output : 2.5 V             :         : 8         : N              
-endereco_escrita[23]         : E5        : output : 2.5 V             :         : 8         : N              
+instrucao[24]                : E3        : output : 2.5 V             :         : 1         : N              
+cond[2]                      : E4        : output : 2.5 V             :         : 8         : N              
+reg_display5[0]              : E5        : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : E6        : power  :                   : 2.5V    : 8         :                
-dado_leitura[18]             : E7        : output : 2.5 V             :         : 8         : N              
-endereco_leitura[26]         : E8        : output : 2.5 V             :         : 8         : N              
+prox_pc[1]                   : E7        : output : 2.5 V             :         : 8         : N              
+prox_pc_final[4]             : E8        : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : E9        : power  :                   : 2.5V    : 8         :                
-dado_leitura[15]             : E10       : output : 2.5 V             :         : 8         : N              
-endereco_escrita[9]          : E11       : output : 2.5 V             :         : 8         : N              
-dado_leitura[4]              : E12       : output : 2.5 V             :         : 8         : N              
+saida_reg2[1]                : E10       : output : 2.5 V             :         : 8         : N              
+endereco_pc[9]               : E11       : output : 2.5 V             :         : 8         : N              
+endereco_pc[3]               : E12       : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : E13       : power  :                   : 2.5V    : 8         :                
-dado_leitura[22]             : E14       : output : 2.5 V             :         : 8         : N              
-r3[8]                        : E15       : output : 2.5 V             :         : 7         : N              
+instrucao[21]                : E14       : output : 2.5 V             :         : 8         : N              
+controle_out                 : E15       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : E16       : power  :                   : 2.5V    : 7         :                
 seg0[2]                      : E17       : output : 2.5 V             :         : 7         : Y              
-cond[4]                      : E18       : output : 2.5 V             :         : 7         : N              
-RESERVED_INPUT               : E19       :        :                   :         : 7         :                
+saida_reg1[25]               : E18       : output : 2.5 V             :         : 7         : N              
+endereco_leitura[28]         : E19       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : E20       : power  :                   : 2.5V    : 7         :                
 clk                          : E21       : output : 2.5 V             :         : 7         : Y              
-reg_display4[3]              : E22       : output : 2.5 V             :         : 7         : N              
+reg_display0[2]              : E22       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : E23       : power  :                   : 2.5V    : 7         :                
-r3[26]                       : E24       : output : 2.5 V             :         : 7         : N              
-r3[12]                       : E25       : output : 2.5 V             :         : 7         : N              
-dado_escrita[30]             : E26       : output : 2.5 V             :         : 6         : N              
-dado_escrita[0]              : E27       : output : 2.5 V             :         : 6         : N              
-reg_display3[2]              : E28       : output : 2.5 V             :         : 6         : N              
-endereco_leitura[23]         : F1        : output : 2.5 V             :         : 1         : N              
-dado_leitura[6]              : F2        : output : 2.5 V             :         : 1         : N              
-rm[2]                        : F3        : output : 2.5 V             :         : 1         : N              
+endereco_leitura[6]          : E24       : output : 2.5 V             :         : 7         : N              
+saida_reg1[29]               : E25       : output : 2.5 V             :         : 7         : N              
+endereco_escrita[17]         : E26       : output : 2.5 V             :         : 6         : N              
+dado_leitura[14]             : E27       : output : 2.5 V             :         : 6         : N              
+endereco_escrita[21]         : E28       : output : 2.5 V             :         : 6         : N              
+escrita_reg                  : F1        : output : 2.5 V             :         : 1         : N              
+zero                         : F2        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT               : F3        :        :                   :         : 1         :                
 ~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : F4        : input  : 2.5 V             :         : 1         : N              
-endereco_escrita[16]         : F5        : output : 2.5 V             :         : 1         : N              
+dado_escrita[21]             : F5        : output : 2.5 V             :         : 1         : N              
 GND                          : F6        : gnd    :                   :         :           :                
-endereco_leitura[31]         : F7        : output : 2.5 V             :         : 8         : N              
-endereco_escrita[21]         : F8        : output : 2.5 V             :         : 8         : N              
+rm[2]                        : F7        : output : 2.5 V             :         : 8         : N              
+prox_pc_final[1]             : F8        : output : 2.5 V             :         : 8         : N              
 GND                          : F9        : gnd    :                   :         :           :                
-dado_leitura[21]             : F10       : output : 2.5 V             :         : 8         : N              
-sinal_mult2                  : F11       : output : 2.5 V             :         : 8         : N              
-dado_leitura[7]              : F12       : output : 2.5 V             :         : 8         : N              
+instrucao[15]                : F10       : output : 2.5 V             :         : 8         : N              
+endereco_pc[8]               : F11       : output : 2.5 V             :         : 8         : N              
+prox_pc[7]                   : F12       : output : 2.5 V             :         : 8         : N              
 GND                          : F13       : gnd    :                   :         :           :                
-endereco_escrita[31]         : F14       : output : 2.5 V             :         : 8         : N              
-saida_reg1[12]               : F15       : output : 2.5 V             :         : 7         : N              
+instrucao[20]                : F14       : output : 2.5 V             :         : 8         : N              
+endereco_leitura[1]          : F15       : output : 2.5 V             :         : 7         : N              
 GND                          : F16       : gnd    :                   :         :           :                
-saida_reg2[15]               : F17       : output : 2.5 V             :         : 7         : N              
-r3[21]                       : F18       : output : 2.5 V             :         : 7         : N              
-reg_display4[1]              : F19       : output : 2.5 V             :         : 7         : N              
+dado_leitura[27]             : F17       : output : 2.5 V             :         : 7         : N              
+dado_leitura[22]             : F18       : output : 2.5 V             :         : 7         : N              
+endereco_escrita[29]         : F19       : output : 2.5 V             :         : 7         : N              
 GND                          : F20       : gnd    :                   :         :           :                
-dado_escrita[2]              : F21       : output : 2.5 V             :         : 7         : N              
+dado_leitura[23]             : F21       : output : 2.5 V             :         : 7         : N              
 seg0[1]                      : F22       : output : 2.5 V             :         : 7         : Y              
 GND                          : F23       : gnd    :                   :         :           :                
-dado_escrita[27]             : F24       : output : 2.5 V             :         : 6         : N              
-dado_escrita[22]             : F25       : output : 2.5 V             :         : 6         : N              
-dado_escrita[11]             : F26       : output : 2.5 V             :         : 6         : N              
-RESERVED_INPUT               : F27       :        :                   :         : 6         :                
-r3[11]                       : F28       : output : 2.5 V             :         : 6         : N              
-endereco_leitura[5]          : G1        : output : 2.5 V             :         : 1         : N              
-dado_leitura[1]              : G2        : output : 2.5 V             :         : 1         : N              
-cond[2]                      : G3        : output : 2.5 V             :         : 1         : N              
-dado_leitura[27]             : G4        : output : 2.5 V             :         : 1         : N              
-instrucao[30]                : G5        : output : 2.5 V             :         : 1         : N              
-saida_reg2[27]               : G6        : output : 2.5 V             :         : 1         : N              
-dado_leitura[2]              : G7        : output : 2.5 V             :         : 8         : N              
-endereco_escrita[22]         : G8        : output : 2.5 V             :         : 8         : N              
-dado_leitura[20]             : G9        : output : 2.5 V             :         : 8         : N              
-saida_reg2[6]                : G10       : output : 2.5 V             :         : 8         : N              
-endereco_leitura[4]          : G11       : output : 2.5 V             :         : 8         : N              
-endereco_leitura[7]          : G12       : output : 2.5 V             :         : 8         : N              
-endereco_leitura[2]          : G13       : output : 2.5 V             :         : 8         : N              
-endereco_escrita[11]         : G14       : output : 2.5 V             :         : 8         : N              
-saida_reg1[24]               : G15       : output : 2.5 V             :         : 7         : N              
-endereco_leitura[27]         : G16       : output : 2.5 V             :         : 7         : N              
-saida_reg2[28]               : G17       : output : 2.5 V             :         : 7         : N              
+reg_display0[0]              : F24       : output : 2.5 V             :         : 6         : N              
+reg_display0[1]              : F25       : output : 2.5 V             :         : 6         : N              
+endereco_leitura[12]         : F26       : output : 2.5 V             :         : 6         : N              
+endereco_escrita[28]         : F27       : output : 2.5 V             :         : 6         : N              
+saida_reg2[21]               : F28       : output : 2.5 V             :         : 6         : N              
+instrucao[9]                 : G1        : output : 2.5 V             :         : 1         : N              
+rm[4]                        : G2        : output : 2.5 V             :         : 1         : N              
+saida_reg2[6]                : G3        : output : 2.5 V             :         : 1         : N              
+rm[3]                        : G4        : output : 2.5 V             :         : 1         : N              
+dado_escrita[14]             : G5        : output : 2.5 V             :         : 1         : N              
+dado_escrita[20]             : G6        : output : 2.5 V             :         : 1         : N              
+instrucao[6]                 : G7        : output : 2.5 V             :         : 8         : N              
+prox_pc[5]                   : G8        : output : 2.5 V             :         : 8         : N              
+r3[19]                       : G9        : output : 2.5 V             :         : 8         : N              
+rn[0]                        : G10       : output : 2.5 V             :         : 8         : N              
+instrucao[27]                : G11       : output : 2.5 V             :         : 8         : N              
+prox_pc_final[9]             : G12       : output : 2.5 V             :         : 8         : N              
+endereco_pc[6]               : G13       : output : 2.5 V             :         : 8         : N              
+dado_leitura[29]             : G14       : output : 2.5 V             :         : 8         : N              
+dado_leitura[28]             : G15       : output : 2.5 V             :         : 7         : N              
+dado_leitura[26]             : G16       : output : 2.5 V             :         : 7         : N              
+endereco_leitura[3]          : G17       : output : 2.5 V             :         : 7         : N              
 seg0[0]                      : G18       : output : 2.5 V             :         : 7         : Y              
-saida_reg2[29]               : G19       : output : 2.5 V             :         : 7         : N              
-endereco_leitura[19]         : G20       : output : 2.5 V             :         : 7         : N              
-r3[16]                       : G21       : output : 2.5 V             :         : 7         : N              
-endereco_leitura[20]         : G22       : output : 2.5 V             :         : 7         : N              
-RESERVED_INPUT               : G23       :        :                   :         : 6         :                
-dado_escrita[7]              : G24       : output : 2.5 V             :         : 6         : N              
-RESERVED_INPUT               : G25       :        :                   :         : 6         :                
-RESERVED_INPUT               : G26       :        :                   :         : 6         :                
-reg_display1[2]              : G27       : output : 2.5 V             :         : 6         : N              
-saida_reg2[10]               : G28       : output : 2.5 V             :         : 6         : N              
+endereco_leitura[22]         : G19       : output : 2.5 V             :         : 7         : N              
+endereco_leitura[30]         : G20       : output : 2.5 V             :         : 7         : N              
+endereco_leitura[2]          : G21       : output : 2.5 V             :         : 7         : N              
+dado_leitura[30]             : G22       : output : 2.5 V             :         : 7         : N              
+dado_escrita[27]             : G23       : output : 2.5 V             :         : 6         : N              
+dado_leitura[11]             : G24       : output : 2.5 V             :         : 6         : N              
+dado_leitura[1]              : G25       : output : 2.5 V             :         : 6         : N              
+dado_leitura[25]             : G26       : output : 2.5 V             :         : 6         : N              
+endereco_leitura[13]         : G27       : output : 2.5 V             :         : 6         : N              
+endereco_leitura[0]          : G28       : output : 2.5 V             :         : 6         : N              
 VCCIO1                       : H1        : power  :                   : 2.5V    : 1         :                
 GND                          : H2        : gnd    :                   :         :           :                
-dado_leitura[8]              : H3        : output : 2.5 V             :         : 1         : N              
-endereco_leitura[22]         : H4        : output : 2.5 V             :         : 1         : N              
-endereco_leitura[29]         : H5        : output : 2.5 V             :         : 1         : N              
-endereco_escrita[29]         : H6        : output : 2.5 V             :         : 1         : N              
-dado_escrita[31]             : H7        : output : 2.5 V             :         : 1         : N              
-endereco_escrita[12]         : H8        : output : 2.5 V             :         : 8         : N              
+instrucao[8]                 : H3        : output : 2.5 V             :         : 1         : N              
+instrucao[4]                 : H4        : output : 2.5 V             :         : 1         : N              
+instrucao[23]                : H5        : output : 2.5 V             :         : 1         : N              
+reg_display6[0]              : H6        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT               : H7        :        :                   :         : 1         :                
+instrucao[7]                 : H8        : output : 2.5 V             :         : 8         : N              
 GNDA3                        : H9        : gnd    :                   :         :           :                
-endereco_escrita[14]         : H10       : output : 2.5 V             :         : 8         : N              
+instrucao[0]                 : H10       : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : H11       : power  :                   : 2.5V    : 8         :                
-endereco_leitura[8]          : H12       : output : 2.5 V             :         : 8         : N              
-dado_leitura[3]              : H13       : output : 2.5 V             :         : 8         : N              
-dado_leitura[13]             : H14       : output : 2.5 V             :         : 8         : N              
-saida_reg2[21]               : H15       : output : 2.5 V             :         : 7         : N              
-saida_reg1[15]               : H16       : output : 2.5 V             :         : 7         : N              
-saida_reg1[14]               : H17       : output : 2.5 V             :         : 7         : N              
+prox_pc[3]                   : H12       : output : 2.5 V             :         : 8         : N              
+dado_leitura[4]              : H13       : output : 2.5 V             :         : 8         : N              
+endereco_escrita[2]          : H14       : output : 2.5 V             :         : 8         : N              
+dado_leitura[9]              : H15       : output : 2.5 V             :         : 7         : N              
+endereco_escrita[7]          : H16       : output : 2.5 V             :         : 7         : N              
+endereco_leitura[25]         : H17       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : H18       : power  :                   : 2.5V    : 7         :                
-r3[25]                       : H19       : output : 2.5 V             :         : 7         : N              
+endereco_leitura[21]         : H19       : output : 2.5 V             :         : 7         : N              
 GNDA2                        : H20       : gnd    :                   :         :           :                
-saida_reg1[22]               : H21       : output : 2.5 V             :         : 7         : N              
+endereco_leitura[24]         : H21       : output : 2.5 V             :         : 7         : N              
 seg0[6]                      : H22       : output : 2.5 V             :         : 6         : Y              
-reg_display5[2]              : H23       : output : 2.5 V             :         : 6         : N              
-contador2[1]                 : H24       : output : 2.5 V             :         : 6         : N              
-RESERVED_INPUT               : H25       :        :                   :         : 6         :                
-saida_reg2[5]                : H26       : output : 2.5 V             :         : 6         : N              
+endereco_escrita[30]         : H23       : output : 2.5 V             :         : 6         : N              
+endereco_escrita[15]         : H24       : output : 2.5 V             :         : 6         : N              
+saida_reg2[31]               : H25       : output : 2.5 V             :         : 6         : N              
+endereco_leitura[23]         : H26       : output : 2.5 V             :         : 6         : N              
 GND                          : H27       : gnd    :                   :         :           :                
 VCCIO6                       : H28       : power  :                   : 2.5V    : 6         :                
 GND+                         : J1        :        :                   :         : 1         :                
 GND                          : J2        : gnd    :                   :         :           :                
-dado_leitura[10]             : J3        : output : 2.5 V             :         : 1         : N              
-endereco_leitura[15]         : J4        : output : 2.5 V             :         : 1         : N              
-endereco_escrita[3]          : J5        : output : 2.5 V             :         : 1         : N              
-endereco_leitura[3]          : J6        : output : 2.5 V             :         : 1         : N              
-endereco_escrita[4]          : J7        : output : 2.5 V             :         : 1         : N              
+instrucao[25]                : J3        : output : 2.5 V             :         : 1         : N              
+prox_pc[9]                   : J4        : output : 2.5 V             :         : 1         : N              
+endereco_pc[0]               : J5        : output : 2.5 V             :         : 1         : N              
+prox_pc_final[3]             : J6        : output : 2.5 V             :         : 1         : N              
+prox_pc_final[8]             : J7        : output : 2.5 V             :         : 1         : N              
 VCCA3                        : J8        : power  :                   : 2.5V    :           :                
 VCCD_PLL3                    : J9        : power  :                   : 1.2V    :           :                
-endereco_leitura[17]         : J10       : output : 2.5 V             :         : 8         : N              
+instrucao[3]                 : J10       : output : 2.5 V             :         : 8         : N              
 GND                          : J11       : gnd    :                   :         :           :                
-dado_leitura[28]             : J12       : output : 2.5 V             :         : 8         : N              
-endereco_leitura[30]         : J13       : output : 2.5 V             :         : 8         : N              
-saida_reg1[23]               : J14       : output : 2.5 V             :         : 8         : N              
-saida_reg1[29]               : J15       : output : 2.5 V             :         : 7         : N              
-saida_reg2[25]               : J16       : output : 2.5 V             :         : 7         : N              
-saida_reg1[1]                : J17       : output : 2.5 V             :         : 7         : N              
+dado_leitura[3]              : J12       : output : 2.5 V             :         : 8         : N              
+endereco_pc[7]               : J13       : output : 2.5 V             :         : 8         : N              
+instrucao[22]                : J14       : output : 2.5 V             :         : 8         : N              
+endereco_escrita[8]          : J15       : output : 2.5 V             :         : 7         : N              
+endereco_escrita[4]          : J16       : output : 2.5 V             :         : 7         : N              
+endereco_leitura[20]         : J17       : output : 2.5 V             :         : 7         : N              
 GND                          : J18       : gnd    :                   :         :           :                
-saida_reg1[7]                : J19       : output : 2.5 V             :         : 7         : N              
+endereco_leitura[29]         : J19       : output : 2.5 V             :         : 7         : N              
 VCCD_PLL2                    : J20       : power  :                   : 1.2V    :           :                
 VCCA2                        : J21       : power  :                   : 2.5V    :           :                
 seg0[5]                      : J22       : output : 2.5 V             :         : 6         : Y              
-RESERVED_INPUT               : J23       :        :                   :         : 6         :                
-dado_escrita[9]              : J24       : output : 2.5 V             :         : 6         : N              
-endereco_escrita[1]          : J25       : output : 2.5 V             :         : 6         : N              
-endereco_escrita[20]         : J26       : output : 2.5 V             :         : 6         : N              
+endereco_leitura[11]         : J23       : output : 2.5 V             :         : 6         : N              
+endereco_leitura[31]         : J24       : output : 2.5 V             :         : 6         : N              
+saida_reg2[17]               : J25       : output : 2.5 V             :         : 6         : N              
+saida_reg2[26]               : J26       : output : 2.5 V             :         : 6         : N              
 GND+                         : J27       :        :                   :         : 6         :                
 GND+                         : J28       :        :                   :         : 6         :                
 lcd_data[4]                  : K1        : output : 2.5 V             :         : 1         : Y              
 lcd_data[5]                  : K2        : output : 2.5 V             :         : 1         : Y              
-endereco_leitura[6]          : K3        : output : 2.5 V             :         : 1         : N              
-endereco_escrita[15]         : K4        : output : 2.5 V             :         : 1         : N              
+prox_pc[4]                   : K3        : output : 2.5 V             :         : 1         : N              
+prox_pc_final[2]             : K4        : output : 2.5 V             :         : 1         : N              
 VCCIO1                       : K5        : power  :                   : 2.5V    : 1         :                
 GND                          : K6        : gnd    :                   :         :           :                
 lcd_data[3]                  : K7        : output : 2.5 V             :         : 1         : Y              
-endereco_escrita[8]          : K8        : output : 2.5 V             :         : 1         : N              
+saida_reg2[9]                : K8        : output : 2.5 V             :         : 1         : N              
 VCCINT                       : K9        : power  :                   : 1.2V    :           :                
 GND                          : K10       : gnd    :                   :         :           :                
 VCCINT                       : K11       : power  :                   : 1.2V    :           :                
@@ -561,22 +561,22 @@ VCCINT                       : K17       : power  :                   : 1.2V    
 GND                          : K18       : gnd    :                   :         :           :                
 VCCINT                       : K19       : power  :                   : 1.2V    :           :                
 GND                          : K20       : gnd    :                   :         :           :                
-dado_escrita[8]              : K21       : output : 2.5 V             :         : 6         : N              
-reg_display7[3]              : K22       : output : 2.5 V             :         : 6         : N              
+endereco_leitura[19]         : K21       : output : 2.5 V             :         : 6         : N              
+reg_display0[3]              : K22       : output : 2.5 V             :         : 6         : N              
 GND                          : K23       : gnd    :                   :         :           :                
 VCCIO6                       : K24       : power  :                   : 2.5V    : 6         :                
-reg_display3[1]              : K25       : output : 2.5 V             :         : 6         : N              
-saida_reg2[31]               : K26       : output : 2.5 V             :         : 6         : N              
-saida_reg1[31]               : K27       : output : 2.5 V             :         : 6         : N              
-saida_reg1[17]               : K28       : output : 2.5 V             :         : 6         : N              
+dado_leitura[13]             : K25       : output : 2.5 V             :         : 6         : N              
+endereco_leitura[9]          : K26       : output : 2.5 V             :         : 6         : N              
+endereco_escrita[25]         : K27       : output : 2.5 V             :         : 6         : N              
+endereco_escrita[31]         : K28       : output : 2.5 V             :         : 6         : N              
 lcd_data[1]                  : L1        : output : 2.5 V             :         : 1         : Y              
 lcd_data[2]                  : L2        : output : 2.5 V             :         : 1         : Y              
 lcd_data[0]                  : L3        : output : 2.5 V             :         : 1         : Y              
 lcd_en                       : L4        : output : 2.5 V             :         : 1         : Y              
 lcd_on                       : L5        : output : 2.5 V             :         : 1         : Y              
 lcd_blon                     : L6        : output : 2.5 V             :         : 1         : Y              
-endereco_escrita[6]          : L7        : output : 2.5 V             :         : 1         : N              
-endereco_escrita[5]          : L8        : output : 2.5 V             :         : 1         : N              
+r3[7]                        : L7        : output : 2.5 V             :         : 1         : N              
+fonte_reg                    : L8        : output : 2.5 V             :         : 1         : N              
 GND                          : L9        : gnd    :                   :         :           :                
 VCCINT                       : L10       : power  :                   : 1.2V    :           :                
 GND                          : L11       : gnd    :                   :         :           :                
@@ -589,22 +589,22 @@ GND                          : L17       : gnd    :                   :         
 VCCINT                       : L18       : power  :                   : 1.2V    :           :                
 GND                          : L19       : gnd    :                   :         :           :                
 VCCINT                       : L20       : power  :                   : 1.2V    :           :                
-RESERVED_INPUT               : L21       :        :                   :         : 6         :                
-contador2[0]                 : L22       : output : 2.5 V             :         : 6         : N              
-dado_leitura[14]             : L23       : output : 2.5 V             :         : 6         : N              
-reg_display2[3]              : L24       : output : 2.5 V             :         : 6         : N              
+saida_reg2[29]               : L21       : output : 2.5 V             :         : 6         : N              
+endereco_escrita[26]         : L22       : output : 2.5 V             :         : 6         : N              
+dado_leitura[5]              : L23       : output : 2.5 V             :         : 6         : N              
+saida_reg2[11]               : L24       : output : 2.5 V             :         : 6         : N              
 seg0[4]                      : L25       : output : 2.5 V             :         : 6         : Y              
 seg0[3]                      : L26       : output : 2.5 V             :         : 6         : Y              
-reg_display1[1]              : L27       : output : 2.5 V             :         : 6         : N              
-reg_display1[0]              : L28       : output : 2.5 V             :         : 6         : N              
+saida_reg2[25]               : L27       : output : 2.5 V             :         : 6         : N              
+saida_reg1[2]                : L28       : output : 2.5 V             :         : 6         : N              
 lcd_rw                       : M1        : output : 2.5 V             :         : 1         : Y              
 lcd_rs                       : M2        : output : 2.5 V             :         : 1         : Y              
 lcd_data[6]                  : M3        : output : 2.5 V             :         : 1         : Y              
-endereco_escrita[7]          : M4        : output : 2.5 V             :         : 1         : N              
+prox_pc[6]                   : M4        : output : 2.5 V             :         : 1         : N              
 lcd_data[7]                  : M5        : output : 2.5 V             :         : 1         : Y              
 nSTATUS                      : M6        :        :                   :         : 1         :                
-endereco_escrita[13]         : M7        : output : 2.5 V             :         : 1         : N              
-endereco_leitura[0]          : M8        : output : 2.5 V             :         : 1         : N              
+dado_reg[6]                  : M7        : output : 2.5 V             :         : 1         : N              
+dado_reg[26]                 : M8        : output : 2.5 V             :         : 1         : N              
 VCCINT                       : M9        : power  :                   : 1.2V    :           :                
 GND                          : M10       : gnd    :                   :         :           :                
 VCCINT                       : M11       : power  :                   : 1.2V    :           :                
@@ -617,22 +617,22 @@ VCCINT                       : M17       : power  :                   : 1.2V    
 GND                          : M18       : gnd    :                   :         :           :                
 VCCINT                       : M19       : power  :                   : 1.2V    :           :                
 GND                          : M20       : gnd    :                   :         :           :                
-saida_reg1[10]               : M21       : output : 2.5 V             :         : 6         : N              
+saida_reg2[19]               : M21       : output : 2.5 V             :         : 6         : N              
 MSEL2                        : M22       :        :                   :         : 6         :                
-dado_reg[18]                 : M23       : output : 2.5 V             :         : 6         : N              
+saida_reg1[17]               : M23       : output : 2.5 V             :         : 6         : N              
 seg1[0]                      : M24       : output : 2.5 V             :         : 6         : Y              
-reg_display2[1]              : M25       : output : 2.5 V             :         : 6         : N              
-dado_reg[9]                  : M26       : output : 2.5 V             :         : 6         : N              
-reg_display1[3]              : M27       : output : 2.5 V             :         : 6         : N              
-dado_reg[11]                 : M28       : output : 2.5 V             :         : 6         : N              
+saida_reg2[14]               : M25       : output : 2.5 V             :         : 6         : N              
+saida_reg1[19]               : M26       : output : 2.5 V             :         : 6         : N              
+saida_reg1[3]                : M27       : output : 2.5 V             :         : 6         : N              
+saida_reg2[10]               : M28       : output : 2.5 V             :         : 6         : N              
 VCCIO1                       : N1        : power  :                   : 2.5V    : 1         :                
 GND                          : N2        : gnd    :                   :         :           :                
-endereco_escrita[2]          : N3        : output : 2.5 V             :         : 1         : N              
-escrita_mem                  : N4        : output : 2.5 V             :         : 1         : N              
+dado_reg[14]                 : N3        : output : 2.5 V             :         : 1         : N              
+r3[13]                       : N4        : output : 2.5 V             :         : 1         : N              
 VCCIO1                       : N5        : power  :                   : 2.5V    : 1         :                
 GND                          : N6        : gnd    :                   :         :           :                
 ~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : N7        : input  : 2.5 V             :         : 1         : N              
-operacao[3]                  : N8        : output : 2.5 V             :         : 1         : N              
+r3[6]                        : N8        : output : 2.5 V             :         : 1         : N              
 GND                          : N9        : gnd    :                   :         :           :                
 VCCINT                       : N10       : power  :                   : 1.2V    :           :                
 GND                          : N11       : gnd    :                   :         :           :                
@@ -645,16 +645,16 @@ GND                          : N17       : gnd    :                   :         
 VCCINT                       : N18       : power  :                   : 1.2V    :           :                
 GND                          : N19       : gnd    :                   :         :           :                
 VCCINT                       : N20       : power  :                   : 1.2V    :           :                
-r3[28]                       : N21       : output : 2.5 V             :         : 6         : N              
+saida_reg2[23]               : N21       : output : 2.5 V             :         : 6         : N              
 MSEL0                        : N22       :        :                   :         : 6         :                
 GND                          : N23       : gnd    :                   :         :           :                
 VCCIO6                       : N24       : power  :                   : 2.5V    : 6         :                
-dado_reg[14]                 : N25       : output : 2.5 V             :         : 6         : N              
-endereco_escrita[28]         : N26       : output : 2.5 V             :         : 6         : N              
+saida_reg1[20]               : N25       : output : 2.5 V             :         : 6         : N              
+saida_reg1[26]               : N26       : output : 2.5 V             :         : 6         : N              
 GND                          : N27       : gnd    :                   :         :           :                
 VCCIO6                       : N28       : power  :                   : 2.5V    : 6         :                
-controle_out                 : P1        : output : 2.5 V             :         : 1         : N              
-dado_leitura[24]             : P2        : output : 2.5 V             :         : 1         : N              
+r3[27]                       : P1        : output : 2.5 V             :         : 1         : N              
+dado_reg[28]                 : P2        : output : 2.5 V             :         : 1         : N              
 ~ALTERA_DCLK~                : P3        : output : 2.5 V             :         : 1         : N              
 nCONFIG                      : P4        :        :                   :         : 1         :                
 TCK                          : P5        : input  :                   :         : 1         :                
@@ -673,21 +673,21 @@ VCCINT                       : P17       : power  :                   : 1.2V    
 GND                          : P18       : gnd    :                   :         :           :                
 VCCINT                       : P19       : power  :                   : 1.2V    :           :                
 GND                          : P20       : gnd    :                   :         :           :                
-dado_reg[7]                  : P21       : output : 2.5 V             :         : 5         : N              
+rd[4]                        : P21       : output : 2.5 V             :         : 5         : N              
 MSEL3                        : P22       :        :                   :         : 6         :                
 MSEL1                        : P23       :        :                   :         : 6         :                
 CONF_DONE                    : P24       :        :                   :         : 6         :                
-dado_reg[22]                 : P25       : output : 2.5 V             :         : 6         : N              
-dado_reg[17]                 : P26       : output : 2.5 V             :         : 6         : N              
-dado_reg[19]                 : P27       : output : 2.5 V             :         : 6         : N              
+operacao[0]                  : P25       : output : 2.5 V             :         : 6         : N              
+saida_reg2[27]               : P26       : output : 2.5 V             :         : 6         : N              
+saida_reg1[28]               : P27       : output : 2.5 V             :         : 6         : N              
 ~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : P28       : output : 2.5 V             :         : 6         : N              
-endereco_pc[1]               : R1        : output : 2.5 V             :         : 2         : N              
-operacao[1]                  : R2        : output : 2.5 V             :         : 2         : N              
-endereco_pc[7]               : R3        : output : 2.5 V             :         : 2         : N              
-endereco_pc[5]               : R4        : output : 2.5 V             :         : 2         : N              
-endereco_pc[4]               : R5        : output : 2.5 V             :         : 2         : N              
-endereco_escrita[0]          : R6        : output : 2.5 V             :         : 2         : N              
-operacao[0]                  : R7        : output : 2.5 V             :         : 2         : N              
+dado_reg[13]                 : R1        : output : 2.5 V             :         : 2         : N              
+instrucao[28]                : R2        : output : 2.5 V             :         : 2         : N              
+dado_reg[19]                 : R3        : output : 2.5 V             :         : 2         : N              
+instrucao[18]                : R4        : output : 2.5 V             :         : 2         : N              
+r3[17]                       : R5        : output : 2.5 V             :         : 2         : N              
+cond[0]                      : R6        : output : 2.5 V             :         : 2         : N              
+r3[5]                        : R7        : output : 2.5 V             :         : 2         : N              
 nCE                          : R8        :        :                   :         : 1         :                
 GND                          : R9        : gnd    :                   :         :           :                
 VCCINT                       : R10       : power  :                   : 1.2V    :           :                
@@ -701,22 +701,22 @@ GND                          : R17       : gnd    :                   :         
 VCCINT                       : R18       : power  :                   : 1.2V    :           :                
 GND                          : R19       : gnd    :                   :         :           :                
 VCCINT                       : R20       : power  :                   : 1.2V    :           :                
-r3[19]                       : R21       : output : 2.5 V             :         : 5         : N              
-dado_reg[21]                 : R22       : output : 2.5 V             :         : 5         : N              
-r3[13]                       : R23       : output : 2.5 V             :         : 5         : N              
-r3[3]                        : R24       : output : 2.5 V             :         : 5         : N              
-reg_display2[0]              : R25       : output : 2.5 V             :         : 5         : N              
-r3[31]                       : R26       : output : 2.5 V             :         : 5         : N              
-r3[6]                        : R27       : output : 2.5 V             :         : 5         : N              
-r3[2]                        : R28       : output : 2.5 V             :         : 5         : N              
+saida_reg1[15]               : R21       : output : 2.5 V             :         : 5         : N              
+dado_reg[22]                 : R22       : output : 2.5 V             :         : 5         : N              
+saida_reg1[16]               : R23       : output : 2.5 V             :         : 5         : N              
+saida_reg1[13]               : R24       : output : 2.5 V             :         : 5         : N              
+instrucao[17]                : R25       : output : 2.5 V             :         : 5         : N              
+saida_reg1[7]                : R26       : output : 2.5 V             :         : 5         : N              
+saida_reg1[11]               : R27       : output : 2.5 V             :         : 5         : N              
+saida_reg1[12]               : R28       : output : 2.5 V             :         : 5         : N              
 VCCIO2                       : T1        : power  :                   : 2.5V    : 2         :                
 GND                          : T2        : gnd    :                   :         :           :                
-endereco_pc[3]               : T3        : output : 2.5 V             :         : 2         : N              
-prox_pc[2]                   : T4        : output : 2.5 V             :         : 2         : N              
+dado_reg[9]                  : T3        : output : 2.5 V             :         : 2         : N              
+r3[24]                       : T4        : output : 2.5 V             :         : 2         : N              
 VCCIO2                       : T5        : power  :                   : 2.5V    : 2         :                
 GND                          : T6        : gnd    :                   :         :           :                
-endereco_pc[0]               : T7        : output : 2.5 V             :         : 2         : N              
-saida_reg2[1]                : T8        : output : 2.5 V             :         : 2         : N              
+dado_reg[18]                 : T7        : output : 2.5 V             :         : 2         : N              
+r3[22]                       : T8        : output : 2.5 V             :         : 2         : N              
 VCCINT                       : T9        : power  :                   : 1.2V    :           :                
 GND                          : T10       : gnd    :                   :         :           :                
 VCCINT                       : T11       : power  :                   : 1.2V    :           :                
@@ -729,22 +729,22 @@ VCCINT                       : T17       : power  :                   : 1.2V    
 GND                          : T18       : gnd    :                   :         :           :                
 VCCINT                       : T19       : power  :                   : 1.2V    :           :                
 GND                          : T20       : gnd    :                   :         :           :                
-dado_reg[24]                 : T21       : output : 2.5 V             :         : 5         : N              
-r3[0]                        : T22       : output : 2.5 V             :         : 5         : N              
+saida_reg2[3]                : T21       : output : 2.5 V             :         : 5         : N              
+saida_reg1[24]               : T22       : output : 2.5 V             :         : 5         : N              
 GND                          : T23       : gnd    :                   :         :           :                
 VCCIO5                       : T24       : power  :                   : 2.5V    : 5         :                
-dado_reg[26]                 : T25       : output : 2.5 V             :         : 5         : N              
-r3[4]                        : T26       : output : 2.5 V             :         : 5         : N              
+reg_display1[2]              : T25       : output : 2.5 V             :         : 5         : N              
+reg_display1[1]              : T26       : output : 2.5 V             :         : 5         : N              
 GND                          : T27       : gnd    :                   :         :           :                
 VCCIO5                       : T28       : power  :                   : 2.5V    : 5         :                
-endereco_pc[8]               : U1        : output : 2.5 V             :         : 2         : N              
-prox_pc[6]                   : U2        : output : 2.5 V             :         : 2         : N              
-endereco_pc[6]               : U3        : output : 2.5 V             :         : 2         : N              
-endereco_pc[2]               : U4        : output : 2.5 V             :         : 2         : N              
-saida_reg1[30]               : U5        : output : 2.5 V             :         : 2         : N              
-prox_pc[0]                   : U6        : output : 2.5 V             :         : 2         : N              
-instrucao[24]                : U7        : output : 2.5 V             :         : 2         : N              
-prox_pc_final[6]             : U8        : output : 2.5 V             :         : 2         : N              
+dado_reg[16]                 : U1        : output : 2.5 V             :         : 2         : N              
+dado_reg[11]                 : U2        : output : 2.5 V             :         : 2         : N              
+instrucao[12]                : U3        : output : 2.5 V             :         : 2         : N              
+rd[2]                        : U4        : output : 2.5 V             :         : 2         : N              
+reg_display7[0]              : U5        : output : 2.5 V             :         : 2         : N              
+rn[4]                        : U6        : output : 2.5 V             :         : 2         : N              
+saida_reg1[4]                : U7        : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT               : U8        :        :                   :         : 2         :                
 GND                          : U9        : gnd    :                   :         :           :                
 VCCINT                       : U10       : power  :                   : 1.2V    :           :                
 GND                          : U11       : gnd    :                   :         :           :                
@@ -758,21 +758,21 @@ VCCINT                       : U18       : power  :                   : 1.2V    
 GND                          : U19       : gnd    :                   :         :           :                
 VCCINT                       : U20       : power  :                   : 1.2V    :           :                
 seg3[1]                      : U21       : output : 2.5 V             :         : 5         : Y              
-dado_reg[29]                 : U22       : output : 2.5 V             :         : 5         : N              
+saida_reg1[23]               : U22       : output : 2.5 V             :         : 5         : N              
 seg1[5]                      : U23       : output : 2.5 V             :         : 5         : Y              
 seg1[6]                      : U24       : output : 2.5 V             :         : 5         : Y              
-r3[1]                        : U25       : output : 2.5 V             :         : 5         : N              
-r3[9]                        : U26       : output : 2.5 V             :         : 5         : N              
-r3[29]                       : U27       : output : 2.5 V             :         : 5         : N              
-reg_display3[0]              : U28       : output : 2.5 V             :         : 5         : N              
-dado_leitura[0]              : V1        : output : 2.5 V             :         : 2         : N              
-instrucao[25]                : V2        : output : 2.5 V             :         : 2         : N              
-prox_pc[5]                   : V3        : output : 2.5 V             :         : 2         : N              
-prox_pc[7]                   : V4        : output : 2.5 V             :         : 2         : N              
-saida_reg2[23]               : V5        : output : 2.5 V             :         : 2         : N              
-prox_pc[9]                   : V6        : output : 2.5 V             :         : 2         : N              
-instrucao[16]                : V7        : output : 2.5 V             :         : 2         : N              
-zero                         : V8        : output : 2.5 V             :         : 2         : N              
+dado_reg[7]                  : U25       : output : 2.5 V             :         : 5         : N              
+rn[2]                        : U26       : output : 2.5 V             :         : 5         : N              
+reg_display1[3]              : U27       : output : 2.5 V             :         : 5         : N              
+dado_reg[1]                  : U28       : output : 2.5 V             :         : 5         : N              
+rn[3]                        : V1        : output : 2.5 V             :         : 2         : N              
+dado_reg[23]                 : V2        : output : 2.5 V             :         : 2         : N              
+dado_reg[30]                 : V3        : output : 2.5 V             :         : 2         : N              
+dado_reg[8]                  : V4        : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT               : V5        :        :                   :         : 2         :                
+dado_escrita[4]              : V6        : output : 2.5 V             :         : 2         : N              
+dado_escrita[5]              : V7        : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT               : V8        :        :                   :         : 2         :                
 VCCINT                       : V9        : power  :                   : 1.2V    :           :                
 GND                          : V10       : gnd    :                   :         :           :                
 VCCINT                       : V11       : power  :                   : 1.2V    :           :                
@@ -786,21 +786,21 @@ GND                          : V18       : gnd    :                   :         
 VCCINT                       : V19       : power  :                   : 1.2V    :           :                
 GND                          : V20       : gnd    :                   :         :           :                
 seg3[0]                      : V21       : output : 2.5 V             :         : 5         : Y              
-reg_display2[2]              : V22       : output : 2.5 V             :         : 5         : N              
-rn[4]                        : V23       : output : 2.5 V             :         : 5         : N              
-instrucao[17]                : V24       : output : 2.5 V             :         : 5         : N              
-dado_reg[27]                 : V25       : output : 2.5 V             :         : 5         : N              
-saida_reg2[0]                : V26       : output : 2.5 V             :         : 5         : N              
-reg_display3[3]              : V27       : output : 2.5 V             :         : 5         : N              
-rn[2]                        : V28       : output : 2.5 V             :         : 5         : N              
-prox_pc_final[0]             : W1        : output : 2.5 V             :         : 2         : N              
-instrucao[27]                : W2        : output : 2.5 V             :         : 2         : N              
-prox_pc_final[1]             : W3        : output : 2.5 V             :         : 2         : N              
-prox_pc_final[9]             : W4        : output : 2.5 V             :         : 2         : N              
+dado_leitura[12]             : V22       : output : 2.5 V             :         : 5         : N              
+instrucao[14]                : V23       : output : 2.5 V             :         : 5         : N              
+saida_reg1[22]               : V24       : output : 2.5 V             :         : 5         : N              
+reg_display2[0]              : V25       : output : 2.5 V             :         : 5         : N              
+saida_reg1[27]               : V26       : output : 2.5 V             :         : 5         : N              
+reg_display2[2]              : V27       : output : 2.5 V             :         : 5         : N              
+saida_reg2[12]               : V28       : output : 2.5 V             :         : 5         : N              
+dado_reg[27]                 : W1        : output : 2.5 V             :         : 2         : N              
+dado_reg[10]                 : W2        : output : 2.5 V             :         : 2         : N              
+dado_escrita[6]              : W3        : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT               : W4        :        :                   :         : 2         :                
 VCCIO2                       : W5        : power  :                   : 2.5V    : 2         :                
 GND                          : W6        : gnd    :                   :         :           :                
-rn[1]                        : W7        : output : 2.5 V             :         : 2         : N              
-prox_pc_final[4]             : W8        : output : 2.5 V             :         : 2         : N              
+reg_display4[3]              : W7        : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT               : W8        :        :                   :         : 2         :                
 GND                          : W9        : gnd    :                   :         :           :                
 VCCINT                       : W10       : power  :                   : 1.2V    :           :                
 GND                          : W11       : gnd    :                   :         :           :                
@@ -823,28 +823,28 @@ seg2[5]                      : W27       : output : 2.5 V             :         
 seg2[6]                      : W28       : output : 2.5 V             :         : 5         : Y              
 GND+                         : Y1        :        :                   :         : 2         :                
 clk0                         : Y2        : input  : 2.5 V             :         : 2         : Y              
-dado_leitura[25]             : Y3        : output : 2.5 V             :         : 2         : N              
-fonte_reg                    : Y4        : output : 2.5 V             :         : 2         : N              
-saida_reg1[19]               : Y5        : output : 2.5 V             :         : 2         : N              
-prox_pc_final[8]             : Y6        : output : 2.5 V             :         : 2         : N              
-prox_pc_final[3]             : Y7        : output : 2.5 V             :         : 2         : N              
+r3[21]                       : Y3        : output : 2.5 V             :         : 2         : N              
+r3[14]                       : Y4        : output : 2.5 V             :         : 2         : N              
+dado_escrita[16]             : Y5        : output : 2.5 V             :         : 2         : N              
+reg_display6[3]              : Y6        : output : 2.5 V             :         : 2         : N              
+dado_escrita[9]              : Y7        : output : 2.5 V             :         : 2         : N              
 VCCA1                        : Y8        : power  :                   : 2.5V    :           :                
 VCCD_PLL1                    : Y9        : power  :                   : 1.2V    :           :                
 RESERVED_INPUT               : Y10       :        :                   :         : 3         :                
 GND                          : Y11       : gnd    :                   :         :           :                
-r3[14]                       : Y12       : output : 2.5 V             :         : 3         : N              
-dado_reg[4]                  : Y13       : output : 2.5 V             :         : 3         : N              
-r3[24]                       : Y14       : output : 2.5 V             :         : 3         : N              
-dado_reg[3]                  : Y15       : output : 2.5 V             :         : 3         : N              
+saida_reg1[31]               : Y12       : output : 2.5 V             :         : 3         : N              
+r3[29]                       : Y13       : output : 2.5 V             :         : 3         : N              
+r3[25]                       : Y14       : output : 2.5 V             :         : 3         : N              
+dado_reg[31]                 : Y15       : output : 2.5 V             :         : 3         : N              
 imm8[0]                      : Y16       : input  : 2.5 V             :         : 4         : Y              
-saida_reg2[30]               : Y17       : output : 2.5 V             :         : 4         : N              
+reg_display6[1]              : Y17       : output : 2.5 V             :         : 4         : N              
 GND                          : Y18       : gnd    :                   :         :           :                
 seg3[6]                      : Y19       : output : 2.5 V             :         : 4         : Y              
 VCCD_PLL4                    : Y20       : power  :                   : 1.2V    :           :                
 VCCA4                        : Y21       : power  :                   : 2.5V    :           :                
 seg1[1]                      : Y22       : output : 2.5 V             :         : 5         : Y              
-dado_reg[28]                 : Y23       : output : 2.5 V             :         : 5         : N              
-rn[0]                        : Y24       : output : 2.5 V             :         : 5         : N              
+reset                        : Y23       : input  : 2.5 V             :         : 5         : Y              
+key                          : Y24       : input  : 2.5 V             :         : 5         : Y              
 seg2[2]                      : Y25       : output : 2.5 V             :         : 5         : Y              
 seg2[4]                      : Y26       : output : 2.5 V             :         : 5         : Y              
 GND+                         : Y27       :        :                   :         : 5         :                
